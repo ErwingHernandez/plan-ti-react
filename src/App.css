@@ -21,9 +21,9 @@
   background: linear-gradient(180deg, #3bdaf6, #1d44ad);
 }
 
-
-
 #accion{
+
+  margin-top: 5rem;
   display: flex;
   height: 5rem;
 
