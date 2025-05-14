@@ -1,37 +1,28 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Home from './Home'
+import Part1 from './pages/part1'
+import Part2 from './pages/part2'
+import Part3 from './pages/part3'
+import Part4 from './pages/part4'
+import Planaccion from './pages/planaccion'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <div id='documento'>
-        <div className='card' id='Card1' >
-          1 part
-        </div>
-
-        <div className='card' id='Card2'>
-          2 part
-        </div>
-
-        <div className='card' id='Card3'>
-          3 part
-        </div>
-
-        <div className='card' id='Card4'>
-          4 part
-        </div>
-    </div>
-      
-      <div id='accion'>
-        <div id='Card5'>
-          Plan de Acción
-        </div>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/part1" element={<Part1 />} />
+        <Route path="/part2" element={<Part2 />} />
+        <Route path="/part3" element={<Part3 />} />
+        <Route path="/part4" element={<Part4 />} />
+        <Route path="/planaccion" element={<Planaccion />} />
+        
+      </Routes>
+    </Router>
   )
 }
 
