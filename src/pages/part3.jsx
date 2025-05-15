@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import '../styles/document.css';
+import '../styles/etiquetas.css';
 
 function Part3() {
 
