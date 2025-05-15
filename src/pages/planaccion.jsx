@@ -4,9 +4,11 @@ import { useState } from "react";
 function Planaccion() {
 
     return (
-        <div>
-            <h1>Parte 1</h1>
-            <p>Esta es la primera parte.</p>
+        <div className="planaccion">
+            <div>Perspectiva Finanziera</div>
+            <div>Perspectiva Cliente</div>
+            <div>Procesos Internos</div>
+            <div>Aprendizaje y Feedack</div>
         </div>
     );
 }
