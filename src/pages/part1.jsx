@@ -11,9 +11,10 @@ function Part1() {
                 <div className="container-titulos">
                     <nav>
                         <ul>
+                            {/*aqui se realiza las etiquetas siempre se inicia con # que hace referencia a los titulos
+                            tienen que ser los mismos nombres para que funcione */}
                             <li><a href="#Introducción">Introduccion</a></li>
                             <li><a href="#Antecedentes">Antecedentes</a></li>
-                            <li><a href="#Alcance2">1.3 Alcance</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -21,8 +22,11 @@ function Part1() {
 
 
                     <div className="part-container">
-                        <h1 id="Introducción">Introducción</h1>
 
+                        {/*a los h1 denles el id correspodiente a la parte del documento */}
+                        <h1 id="Introducción">Introducción</h1>
+                        {/*los dividien por secciones */}
+                        {/*fijense en el documento al para saber donde meter los <br/> que son saltos de linea */}
                         <section>
                             <p>
                                 El estudio se centra en el análisis de la planificación estratégica de las Tecnologías de la Información (TI) y la gestión del Sistema de Información Universitario para el Desarrollo Tecnológico (SIUDT) de la UNAN-Managua. Estos elementos se articulan dentro del entorno de los laboratorios del pabellón 16, en el primer semestre del año 2025, donde se evidencia la necesidad de reforzar la etapa de planificación para garantizar la eficiencia y sostenibilidad del sistema. La investigación se desarrolla dentro del dominio “Planear” de COBIT 4.1, el cual aborda componentes esenciales como la alineación estratégica, la gestión de recursos y la formulación de objetivos tecnológicos alineados a las metas institucionales.

@@ -1,9 +1,11 @@
+/*contenedor principal*/
 .principal-container {
     width: auto;
     display: flex;
     justify-content: center;
 }
 
+/*adicion del scroll*/
 .scroll-container {
     overflow-y: hidden;
     max-height: 98vh;
@@ -13,14 +15,11 @@
     overflow-y: auto;
 }
 
-/* Estilo del scrollbar */
 .scroll-container::-webkit-scrollbar {
     width: 20px;
     border-radius: 10px;
 }
 
-
-/* El "pulgar" del scrollbar (la parte que se mueve) */
 .scroll-container::-webkit-scrollbar-thumb {
     background-color: rgb(83, 76, 76);
     border-radius: 10px;
@@ -31,11 +30,12 @@
 .scroll-container {
     height: 98vh;
     width: 800px;
- 
+
 }
 
+/*el contenido principal*/
 .part-container {
-  
+
     padding: 2rem;
     overflow-y: auto;
     max-width: 700px;
@@ -62,7 +62,8 @@
     color: #333;
 }
 
-.container-titulos{
+/*contenedor de las etiquetas laterales*/
+.container-titulos {
     display: flex;
     height: 98dvh;
     margin-right: 80%;
