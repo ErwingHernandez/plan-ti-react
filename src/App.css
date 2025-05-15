@@ -1,6 +1,6 @@
 #documento{
   display: grid;
-  margin-top: 5rem;
+  margin-top: 4rem;
   grid-template-columns: repeat(2, 200px); 
   grid-template-rows: repeat(2, 200px);    
   gap: 20px;
