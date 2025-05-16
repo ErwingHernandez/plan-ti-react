@@ -70,12 +70,12 @@ function Planaccion() {
                 <div className="cmi-grid">
                     <div className="cmi-box top" onClick={() => abrirModal("financiera")}>
                         <h3>Perspectiva Financiera</h3>
-                        <img id="img1" src="/public/finanzas.png" alt="Finanzas" />
+                        <img id="img1" src="/finanzas.png" alt="Finanzas" />
                     </div>
 
                     <div className="cmi-box right" onClick={() => abrirModal("aprendizaje")}>
                         <h3>Aprendizaje y Feedback</h3>
-                        <img id="img2" src="/public/aprendizaje y feedback.jpg" alt="Aprendizaje y Feedback" />
+                        <img id="img2" src="/aprendizaje y feedback.jpg" alt="Aprendizaje y Feedback" />
                     </div>
 
                     <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -84,12 +84,12 @@ function Planaccion() {
                     
                     <div className="cmi-box left" onClick={() => abrirModal("clientes")}>
                         <h3>Perspectiva de los Clientes</h3>
-                        <img id="img3" src="/public/cliente.webp" alt="Clientes" />
+                        <img id="img3" src="/cliente.webp" alt="Clientes" />
                     </div>
 
                     <div className="cmi-box bottom" onClick={() => abrirModal("procesos")}>
                         <h3>Procesos Internos</h3>
-                        <img id="img4" src="/public/procesos internos.jpg" alt="Procesos" />
+                        <img id="img4" src="/procesos internos.jpg" alt="Procesos" />
                     </div>
                 </div>
             </div>
