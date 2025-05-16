@@ -5,7 +5,7 @@ import '../styles/planaccion.css'
 
 const datosPerspectivas = {
     financiera: {
-        img: "/public/finanzas.png",
+        img: "/finanzas.png",
         objetivos: ["Reducir el costo total de mantenimiento correctivo.",
             "Aumentar el retorno de inversión del sistema de gestión tecnológica. ",
             "Disminuir el costo promedio por equipo fuera de servicio. ",
@@ -18,7 +18,7 @@ const datosPerspectivas = {
     },
 
     aprendizaje: {
-        img: "/public/aprendizaje y feedback.jpg",
+        img: "/aprendizaje y feedback.jpg",
         objetivos: ["Implementar un plan de formación continua para el personal que trabaja en los laboratorios del pabellón 16, iniciando en el segundo semestre de 2025, con capacitaciones semestrales sobre el uso, mantenimiento y cuidado de los equipos, así como medidas básicas de seguridad informática, con el fin de fortalecer sus habilidades técnicas de forma progresiva durante un período de cinco años. "],
         indicadores: ["Tasa de participación en capacitaciones. ",
             "Nivel de satisfacción del personal capacitado. ",
@@ -27,7 +27,7 @@ const datosPerspectivas = {
     },
 
     clientes: {
-        img: "/public/cliente.webp",
+        img: "/cliente.webp",
         objetivos: ["Aumentar en un 20% la percepción de confiabilidad del servicio tecnológico ofrecido.",
             "Promover el uso responsable y adecuado de los recursos tecnológicos, reduciendo un 90% en número de incidentes.",
             "Garantizar la actualización de software educativo según necesidades requeridas por los usuarios.",
@@ -41,7 +41,7 @@ const datosPerspectivas = {
     },
 
     procesos: {
-        img: "/public/procesos internos.jpg",
+        img: "/procesos internos.jpg",
         objetivos: ["Optimizar procesos", "Reducir errores"],
         indicadores: ["Tiempo de ciclo", "Tasa de error"]
     }
