@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 import '../styles/document.css';
 import '../styles/etiquetas.css';
 
