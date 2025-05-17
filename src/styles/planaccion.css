@@ -12,9 +12,19 @@
 }
 
 .cmi-grid {
+    display: grid;
+    grid-template-areas:
+        ". top ."
+        "left . right"
+        ". bottom .";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .cmi-box {
@@ -25,8 +35,25 @@
     background: #fff;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: absolute;
     text-align: center;
+    animation: bubbleIn 0.6s ease-out forwards;
+    transition: opacity 0.3s ease;
+}
+
+.cmi-box.salida {
+  animation: bubbleOut 0.6s ease-out forwards;
+}
+
+/* Cuando el modal está activo, desvanecer los demás elementos */
+.cmi-container.modal-activo .cmi-box {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* Excepto el que fue clickeado (opcional si quieres destacarlo más) */
+.cmi-container.modal-activo .cmi-box.activo {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .cmi-box h3 {
@@ -56,16 +83,14 @@
 }
 
 /* Posiciones de los recuadros*/
-.top {
-    left: 50%;
-    transform: translateX(-50%);
+.cmi-box.top {
+    grid-area: top;
 }
 
-.right {
-    top: 51%;
-    right: 30px;
-    transform: translateY(-50%);
+.cmi-box.right {
+    grid-area: right;
 }
+
 
 .btn-volver {
     position: absolute;
@@ -85,16 +110,12 @@
     background-color: #005f99;
 }
 
-.bottom {
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+.cmi-box.bottom {
+    grid-area: bottom;
 }
 
-.left {
-    top: 51%;
-    left: 30px;
-    transform: translateY(-50%);
+.cmi-box.left {
+    grid-area: left;
 }
 
 
@@ -110,6 +131,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 0.4s ease;
     z-index: 1000;
 }
 
@@ -194,14 +216,31 @@
     font-size: 1em;
 }
 
-.close-button {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    color: rgb(255, 0, 0);
-    border: none;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+
+@keyframes bubbleIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bubbleOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
 }
