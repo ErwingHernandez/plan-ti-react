@@ -7,6 +7,7 @@ import Part3 from './pages/part3'
 import Part4 from './pages/part4'
 import Inventario from './pages/inventario'
 import Planaccion from './pages/planaccion'
+import Backgroundslides from './components/backgroundslides.jsx'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <Router>
+           <Backgroundslides />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/part1" element={<Part1 />} />

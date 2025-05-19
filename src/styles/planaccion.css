@@ -142,6 +142,7 @@
     flex-direction: row;
     align-items: center;
     height: 350px;
+    width: 1200px;
     padding: 20px;
     border-radius: 12px;
     position: relative;
