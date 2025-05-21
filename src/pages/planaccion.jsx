@@ -36,14 +36,20 @@ const datosPerspectivas = {
         indicadores: ["% de satisfacción del usuario en encuestas semestrales.",
             "Nº de incidencias por mal uso / Nº total de sesiones registradas.",
             "% de softwares requeridos que están disponibles y actualizados.",
-            "% de disponibilidad de equipos funcionales durante el horario de clase.",
+            "% de disponibilidad de equipos funcionales durante el horario de clase."
         ]
     },
 
     procesos: {
         img: "/procesos internos.jpg",
-        objetivos: ["Optimizar procesos", "Reducir errores"],
-        indicadores: ["Tiempo de ciclo", "Tasa de error"]
+        objetivos: ["Aumentar la disponibilidad operativa de los equipos",
+            "Reducir en un 30% los tiempos de respuesta ante fallas tecnicas",
+            "Automatizar el sistema de reservas y prestamo de equipos",
+            "Establecer un inventario digital actualizado y funcional al 100%",],
+        indicadores: ["% de equipos funcionales disponibles por semana",
+            "Tiempo promedio de resolucion de incidencias",
+            "Tasa de uso del sistema automatizado vs manual",
+            "Frecuencia de actualizacion del inventario (Mensual (Bimestral))"]
     }
 };
 
@@ -78,14 +84,14 @@ function Planaccion() {
                             setAnimarSalida(true);
                             setTimeout(() => {
                                 navigate('/');
-                            }, 700); 
+                            }, 700);
                         }}
                     >
                         Página Principal
                     </button>
                 </div>
 
-                
+
 
                 <div className="cmi-grid">
 

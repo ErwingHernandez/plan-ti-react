@@ -217,6 +217,19 @@
     font-size: 1em;
 }
 
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 
 @keyframes bubbleIn {
     0% {
