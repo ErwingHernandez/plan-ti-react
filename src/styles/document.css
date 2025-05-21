@@ -142,3 +142,8 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+
+#fase {
+  width: fit-content;
+  height: 200px;
+}
