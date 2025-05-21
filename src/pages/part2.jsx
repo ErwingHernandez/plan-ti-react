@@ -267,12 +267,36 @@ function Part2() {
                             <p>
                                 La <strong>automatización de procesos</strong> consiste en el uso de tecnologías para ejecutar tareas recurrentes o procesos de negocio con mínima intervención humana, mejorando eficiencia, precisión y control (López Supelano, 2025).
 
-                                <br />Dentro de este marco, el gobierno de Tecnologías de la Información (TI) emerge como una respuesta a los cambios derivados del dinamismo de la economía, caracterizado por la expansión de datos masivos, analítica de datos avanzada, datos abiertos y tecnologías como la web semántica. Estos desarrollos han generado nuevas demandas sociales, sobre todo cuando se trata de temas de privacidad y ciberseguridad, que requieren un reajuste en las políticas, normativas, estructuras internas y sistemas tecnológicos. (Janssen & Voort, 2016) (Twinomurinzi, Phahlamohlaka, & Byrne, 2012).
+                                <br />PA (Automatización Robótica de Procesos): Uso de software para emular acciones humanas en sistemas digitales.
 
-                                <br />En este mismo sentido, el gobierno de TI se orienta al desarrollo estratégico de la tecnología alineada a los objetivos de la organización, diferenciándose de la gestión de TI, que se enfoca en la operación y administración cotidiana de los sistemas tecnológicos. Según (Juiz, Gómez, & Barceló, 2012) y (Welch & Feeney, 2014), este enfoque busca evidenciar que las TI constituyen un activo estratégico que genera valor, impulsando mecanismos de alineación entre las decisiones tecnológicas y los propósitos del negocio. Entonces, se puede decir que el gobierno de TI, IT Governance o ITG (Information Technology Governance) se define como los procesos que aseguran el uso efectivo y eficiente de TI para permitir que una organización logre sus objetivos estratégicos.
+                                <br />Inteligencia Artificial: Aplicación de algoritmos que permiten a las máquinas aprender y tomar decisiones.
 
-                                <br />Uno de los marcos más reconocidos por la comunidad académica y profesional para definir los componentes esenciales del gobierno de Tecnologías de la Información (TI) es el modelo propuesto por el IT Governance Institute en su versión COBIT 4.1 (2007). Este marco establece cinco dimensiones fundamentales para un gobierno efectivo de TI: alineación estratégica, que busca garantizar que las iniciativas tecnológicas estén en concordancia con los objetivos del negocio; la entrega de valor, que se refiere a asegurar que los servicios y soluciones de TI generen beneficios concretos a través de un ciclo eficiente de prestación; gestión de riesgos, que contempla la protección de los activos tecnológicos, la preparación ante desastres y el cumplimiento normativo; administración de recursos, que tiene como fin optimizar el uso y desarrollo de los recursos disponibles en TI y por último la medición del desempeño que permite evaluar resultados, identificar desviaciones y aplicar mejoras cuando sea necesario (Valencia, Marulanda, & López, 2018).
+                                <br />La automatización de procesos en TI trae beneficios que hacen el trabajo más ágil y confiable. Ayuda a reducir los errores que suelen ocurrir cuando las tareas se hacen de forma manual, y permite que las actividades repetitivas se realicen mucho más rápido. También hace que todo sea más claro y fácil de seguir, ya que deja un rastro de cada paso del proceso. Gracias a esto, las decisiones se pueden tomar con más seguridad, basándose en datos reales y actualizados. Además, logra que los procesos tecnológicos estén mejor conectados con los objetivos del negocio, trabajando todos en la misma dirección (Lorena, 2010).
 
+                            </p>
+                        </section>
+
+                        <h2>Aplicaciones en laboratorios universitarios.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                En un entorno social cada vez más interconectado y dependiente de los avances tecnológicos, resulta clave para la competitividad de las instituciones universitarias la implementación de Entornos Educativos Tecnológicos (EET). Esta tarea, sin embargo, no es sencilla, especialmente en espacios como los laboratorios universitarios, donde convergen retos organizativos, tecnológicos y académicos. A pesar de estas dificultades, es fundamental destacar que la transformación universitaria, con apoyo de la tecnología, no debe detenerse ante los obstáculos, sino más bien encontrar en ellos oportunidades de mejora e innovación (Guerrero Pulido, 2018).
+
+                                <br />Los EET, aplicados al contexto de los laboratorios, deben estar respaldados por políticas institucionales sólidas que fomenten la innovación en la enseñanza y el aprendizaje, mediante medios tecnológicos adecuados. Esto implica contar con personal capacitado, una infraestructura y una infoestructura alineadas con las necesidades académicas, y un compromiso institucional con la mejora continua. Todo ello con el fin de elevar la calidad de los servicios ofrecidos a la comunidad universitaria de forma coherente y articulada con los avances del conocimiento.
+
+                                <br />El uso de tecnología en los laboratorios universitarios no puede hacerse de forma improvisada. Requiere planificación estratégica, ya que las TIC no son solo un apoyo, sino herramientas capaces de transformar profundamente la dinámica educativa. Por ello, se hace necesario abordar la planificación de estos entornos desde una perspectiva sistémica, que considere tanto la estrategia como la operación y la táctica, integrando la automatización como una herramienta clave para una nueva forma de gestión educativa (Guerrero Pulido, 2018).
+
+                                <br />En este sentido, la automatización puede aplicarse en diversas áreas de los laboratorios para optimizar la gestión y el uso de recursos tecnológicos. Por ejemplo:
+
+                                <ul>
+                                    <li>Gestión de Equipos: mediante sistemas que automaticen el inventario y el mantenimiento del hardware.</li>
+                                    <li>Control de Acceso: con tecnologías que regulen de forma segura la entrada y salida de usuarios.</li>
+                                    <li>Monitoreo de Uso: a través del seguimiento en tiempo real del uso de equipos y espacios.</li>
+                                    <li>Programación de Actividades: mediante herramientas que faciliten la reserva y asignación eficiente de recursos.</li>
+                                </ul>
+
+                                Estas aplicaciones no solo mejoran la administración de los laboratorios, sino que también elevan la calidad del servicio y la experiencia de quienes los utilizan. Por ello, se hace imprescindible que las universidades adopten un enfoque de planificación estratégica dinámico, capaz de adaptarse a los cambios del entorno y de anticiparse a los nuevos desafíos. Así se promueve una gestión más proactiva, orientada a la mejora continua y al aprovechamiento pleno de las tecnologías disponibles (Guerrero Pulido, 2018).
+
+                                <br />Finalmente, es importante reconocer que no existen soluciones únicas ni recetas definitivas para la gestión tecnológica en laboratorios universitarios. Este artículo busca aportar algunas orientaciones generales, abiertas a ser enriquecidas y ampliadas con experiencias, investigaciones y propuestas que surjan en el camino hacia una universidad más tecnológica, eficiente e inclusiva(Guerrero Pulido, 2018).
                             </p>
                         </section>
 
@@ -288,6 +312,73 @@ function Part2() {
                                 <br />Uno de los marcos más reconocidos por la comunidad académica y profesional para definir los componentes esenciales del gobierno de Tecnologías de la Información (TI) es el modelo propuesto por el IT Governance Institute en su versión COBIT 4.1 (2007). Este marco establece cinco dimensiones fundamentales para un gobierno efectivo de TI: alineación estratégica, que busca garantizar que las iniciativas tecnológicas estén en concordancia con los objetivos del negocio; la entrega de valor, que se refiere a asegurar que los servicios y soluciones de TI generen beneficios concretos a través de un ciclo eficiente de prestación; gestión de riesgos, que contempla la protección de los activos tecnológicos, la preparación ante desastres y el cumplimiento normativo; administración de recursos, que tiene como fin optimizar el uso y desarrollo de los recursos disponibles en TI y por último la medición del desempeño que permite evaluar resultados, identificar desviaciones y aplicar mejoras cuando sea necesario (Valencia, Marulanda, & López, 2018).
 
                             </p>
+                        </section>
+
+                        <h2>COBIT 4.1</h2>
+                        <h3>Definición</h3>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                COBIT es un marco de trabajo y un conjunto de herramientas de Gobierno de Tecnología de Información (TI) que permite a la Gerencia cerrar la brecha entre los requerimientos de control, aspectos técnicos y riesgos de negocios. COBIT habilita el desarrollo de políticas claras y buenas prácticas para el control de TI a lo largo de las organizaciones, según (GLENDA OSORIO, 2012).
+
+                                <br />Siendo COBIT soportado por Information Systems Audit and Control Association y por el IT Governance Institute e introducido en su primera versión en el año 1996. Ha logrado posicionarse como un marco de referencia de buenas prácticas siendo utilizado por empresas exitosas como la guía de los procesos de Gobierno de TI (Vanegas Balmaceda, Repositorio UNAN Managua, 2020).
+
+                                <br />Para la explicación a continuación se tomaron aspectos directamente del Marco de Trabajo de COBIT 4.1 Dentro de los beneficios que podemos encontrar al aplicar COBIT tenemos los siguientes: 
+
+                                <ul>
+                                    <li>Se vincula con los requerimientos del negocio.</li>
+                                    <li>Alineación de TI con el negocio o Habilitación del negocio por parte de TI maximizando beneficios.</li>
+                                    <li>Organiza las actividades de TI en un modelo de procesos.</li>
+                                    <li>Identifica los principales recursos de TI utilizados, así como el uso de los mismos responsablemente.</li>
+                                    <li>Administración de riesgos.</li>
+                                    <li>Define los objetivos de control gerenciales.</li>
+                                    <li>Aplicación de buenas prácticas. </li>
+                                </ul>
+
+                                COBIT se enfoca en cuatro dominios con el fin de establecer una correcta administración de los recursos, inversiones y beneficios. Estos dominios se identifican a continuación:
+
+                                <br />Planear y Organizar: Cuenta con los procesos relacionados con las estrategias implantadas en Tecnología de Información garantizando que están acoplados con los objetivos de la organización tomando en cuenta los aspectos básicos como la creación de una planeación, comunicación y una correcta administración. A esto se le agrega una estructura organizacional y tecnológica adecuada que se adapte a las necesidades. Principalmente se enfoca en garantizar el alineamiento de las estrategias de TI con el negocio y el uso óptimo de los recursos, además de ofrecer una comunicación clara y concisa de los objetivos de TI a todas las personas de la organización. También se deben de identificar y administrar los riesgos y controlar la calidad de los sistemas con el fin de garantizar que suplen las necesidades del negocio.
+
+                                <br />Adquirir e implementar: El objetivo principal de este dominio es garantizar que las soluciones que TI brinda satisfagan las necesidades y objetivos del negocio con el fin de ofrecer servicios de calidad. El proceso se lleva a cabo una vez que se cuenta con la estrategia de TI previamente definida en el dominio anterior (Planear y Organizar) lo que facilita la identificación de las soluciones de TI las cuales se convertirán el proyecto que una vez adquiridos, implementados e integrados en los procesos de negocio ofrezcan los beneficios esperados. Adicionalmente, se deben de controlan los cambios o mantenimientos necesarios con el fin de no entorpecer el funcionamiento del negocio.
+
+                                <br />Entregar y Dar: Soporte Siendo las soluciones implementadas e integradas a los procesos de negocio se debe de iniciar la prestación de servicios, la administración de seguridad y garantizar la continuidad. Al ofrecer nuevas herramientas y tecnología es necesario ofrecer un soporte a los usuarios y establecer una correcta administración y control de los datos que se generan, esto con el fin de agilizar el funcionamiento de los servicios y garantizar un uso correcto de los nuevos sistemas.
+
+                                <br />Monitorear y Evaluar: Siendo COBIT una herramienta de control orientado al Gobierno de TI es sumamente importante contar con los procesos que nos orienten a establecer formas de evaluación en cuanto a calidad y cumplimiento de los requerimientos de control, monitoreo de control interno, desempeño, cumplimiento regulatorio y aplicación de las directrices del gobierno. Cada uno de los dominios mencionados anteriormente cuenta con procesos definidos que ofrecen una guía para realizar las tareas correctamente; adicional a esto cuenta con 34 objetivos de control que permiten mantener los servicios siempre monitoreados; estos se dividen por cada dominio de tal forma que establecen un orden adecuado para su aplicación, la ilustración 2 se muestra el paso a paso de cada uno de los dominios principales, y la relación con los objetivos de la organización y del gobierno de TI (Institute, 2007).
+                            </p>
+                        </section>
+
+                        <h2>Misión del COBIT</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Buscar, desarrollar, publicar y promover un autoritario y actualizado conjunto internacional de objetivos de control de tecnologías de la información, generalmente aceptadas, para el uso diario por parte de gestores de negocio y auditores (Institute, 2007).
+                            </p>
+                        </section>
+
+                        <h2>Criterios de Información de COBIT.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Para satisfacer los objetivos del negocio, la información necesita adaptarse a ciertos criterios de control, los cuales son referidos en COBIT como requerimientos de información del negocio. Se definieron los siguientes siete criterios de información: efectividad, eficiencia, confidencialidad, integridad, disponibilidad, cumplimiento y confiabilidad (Institute, 2007).
+                            </p>
+                        </section>
+
+                        <h2>Niveles COBIT.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Se divide en 3 niveles, los cuales son los siguientes:
+
+                                <ul>
+                                    <il>Dominios: Agrupación natural de procesos, normalmente corresponden a un dominio o una responsabilidad organizacional. </il>
+                                    <il>Procesos: Conjuntos o series de actividades unidas con delimitación o cortes de control. </il>
+                                    <il>Actividades: Acciones requeridas para lograr un resultado medible (Institute, 2007).</il>
+                                </ul>
+                            </p>
+                        </section>
+
+                        <h2>Dominio de Planear y Organizar (PO) de COBIT 4.1.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                El dominio Planear y Organizar (PO) de COBIT 4.1 se enfoca en establecer la estrategia y tácticas para asegurar que TI pueda contribuir efectivamente a los objetivos del negocio. Incluye 11 procesos que abarcan desde la planificación estratégica hasta la administración de calidad y riesgos de TI. Cada proceso tiene objetivos de control específicos que garantizan el alineamiento con las metas empresariales, el uso óptimo de los recursos, y la gestión de riesgos y calidad (Institute, 2007).
+                            </p>
+                            <img src="public/tabla.jpg" id="tabla"/>
                         </section>
 
                         <h1 id="Aplicación del Dominio PO en el SIUDT" className="section-fade" style={{ animationDelay: '0.3s' }}>Aplicación del Dominio PO en el SIUDT, UNAN-Managua</h1>
