@@ -11,7 +11,9 @@ function Part2() {
 
     const titulos = [
         "Conceptos Básicos",
-        "PETI en los Laboratorios del SIUDT",
+        "Planificación Estratégica",
+        "Planificación Estratégica de TI",
+        "Automatización de Procesos en TI",
         "Gobierno de TI y COBIT 4.1",
         "Aplicación del Dominio PO en el SIUDT",
         "Estrategias Tecnológicas",
@@ -96,7 +98,8 @@ function Part2() {
                                     Según (Merino, 2008) Estrategia proviene del griego “strategos”, se entiende como el arte de lograr los objetivos trazados. La estrategia comprende el propósito general de una organización, en términos de objetivos de largo plazo, programas de acción y prioridades en la asignación de recursos (personas, dineros esfuerzos, etc.). En este sentido, se convierte en un marco conceptual fundamental que le permite a una institución permanecer en el tiempo y adaptarse a un medio altamente cambiante.                
                                 </p>
                             </section>
-
+                            
+                            <h1 id="Planificación Estratégica" className="section-fade" style={{ animationDelay: '0.3s' }}>Planificación Estratégica</h1>
                             <h2>Planificación Estratégica</h2>
                             <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                                 <p>
@@ -104,38 +107,23 @@ function Part2() {
                                 </p>
                             </section>
 
-                            <h2>Propósito de la Planificación Estratégica</h2>
+                            <h2>Propósito, Importancia y Objetivos de la Planificación Estratégica</h2>
                             <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                                 <p>
-                                    Establecer una planificación estratégica tiene como propósito brindar una guía sobre las acciones que se deben llevar a cabo en un tiempo definido, identificando el entorno y el funcionamiento interno de la organización con el fin de identificar aspectos negativos que sean subsanables mediante las estrategias propuestas y permitiendo identificar los objetivos, misión y visión. Permitiendo establecer una dirección clara con prioridades y una asignación responsable de los recursos (Vanegas Balmaceda, Repositorio UNAN Managua, 2020).
+                                    Su <strong>propósito</strong> es establecer una planificación estratégica tiene como propósito brindar una guía sobre las acciones que se deben llevar a cabo en un tiempo definido, identificando el entorno y el funcionamiento interno de la organización con el fin de identificar aspectos negativos que sean subsanables mediante las estrategias propuestas y permitiendo identificar los objetivos, misión y visión. Permitiendo establecer una dirección clara con prioridades y una asignación responsable de los recursos (Vanegas Balmaceda, Repositorio UNAN Managua, 2020).
+                                    
+                                    <br />La planificación es <strong>importante</strong> porque permite mantener el equilibrio entre las tareas que la empresa puede coordinar y los imprevistos o problemas que escapan de su control, pero que se debe afrontar porque interfieren en su actividad (Azkue, 2018).
+                                
+                                    <br />El <strong>objetivo</strong> de la planificación estratégica es lograr una ventaja competitiva sostenible que arroje un buen nivel de utilidades, analiza la óptima combinación entre los recursos y las oportunidades del negocio; además toma en cuenta de qué manera se adaptará la empresa al desafío que propone el entorno competitivo. La planificación estratégica se enfoca en un horizonte de mediano y largo plazo, generalmente de 3 a 10 años (Vanegas Balmaceda, Repositorio UNAN Managua, 2020).
                                 </p>
                             </section>
 
-                            <h2>Importancia de la Planificación Estratégica</h2>
+                            <h2>IVisión y Misión de la Planificación Estratégica</h2>
                             <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                                 <p>
-                                    La planificación permite mantener el equilibrio entre las tareas que la empresa puede coordinar y los imprevistos o problemas que escapan de su control, pero que se debe afrontar porque interfieren en su actividad (Azkue, 2018).  
-                                </p>
-                            </section>
-
-                            <h2>Objetivo de la Planificación Estratégica</h2>
-                            <section className="section-fade" style={{ animationDelay: '0.5s' }}>
-                                <p>
-                                    El objetivo de la planificación estratégica es lograr una ventaja competitiva sostenible que arroje un buen nivel de utilidades, analiza la óptima combinación entre los recursos y las oportunidades del negocio; además toma en cuenta de qué manera se adaptará la empresa al desafío que propone el entorno competitivo. La planificación estratégica se enfoca en un horizonte de mediano y largo plazo, generalmente de 3 a 10 años (Vanegas Balmaceda, Repositorio UNAN Managua, 2020).
-                                </p>
-                            </section>
-
-                            <h2>Visión de la Planificación Estratégica</h2>
-                            <section className="section-fade" style={{ animationDelay: '0.5s' }}>
-                                <p>
-                                    La visión, de manera simple, es el sueño de la organización, la inspiración máxima a la cual se quiere llegar, la meta ambiciosa por alcanzar en el futuro. Los planes de la organización apuntan al logro, en el largo plazo, de dicha visión. Dicho de otro modo, la visión es la manera como se ve la organización en sí misma en un plazo de diez, veinte o más años, en la cúspide de éxito (Hamel & Prahalad, 1989).
-                                </p>
-                            </section>
-
-                            <h2>Misión de la Planificación Estratégica</h2>
-                            <section className="section-fade" style={{ animationDelay: '0.5s' }}>
-                                <p>
-                                    La misión es el reflejo del esfuerzo por traducir la visión en un gran objetivo general de la organización. La misión expone el porqué de la organización y lo que debe hacer. Es a partir de la misión que se generan las estrategias correspondientes a cada uno de los planes operativos. La misión es la piedra angular del planteamiento estratégico (Hamel & Prahalad, 1989).
+                                    La <strong>visión</strong>, de manera simple, es el sueño de la organización, la inspiración máxima a la cual se quiere llegar, la meta ambiciosa por alcanzar en el futuro. Los planes de la organización apuntan al logro, en el largo plazo, de dicha visión. Dicho de otro modo, la visión es la manera como se ve la organización en sí misma en un plazo de diez, veinte o más años, en la cúspide de éxito (Hamel & Prahalad, 1989).
+                                
+                                    <br />La <strong>misión</strong> es el reflejo del esfuerzo por traducir la visión en un gran objetivo general de la organización. La misión expone el porqué de la organización y lo que debe hacer. Es a partir de la misión que se generan las estrategias correspondientes a cada uno de los planes operativos. La misión es la piedra angular del planteamiento estratégico (Hamel & Prahalad, 1989).
                                 </p>
                             </section>
 
@@ -158,8 +146,8 @@ function Part2() {
 
                         </section>
 
-                        <h1 id="PETI en los Laboratorios del SIUDT" className="section-fade" style={{ animationDelay: '0.3s' }}>Planificación Estratégica de las Tecnologías de la Información en los Laboratorios del SIUDT.</h1>
-
+                        <h1 id="Planificación Estratégica de TI" className="section-fade" style={{ animationDelay: '0.3s' }}>Planificación Estratégica TI</h1>
+                        <h2>Planificación Estratégica de las Tecnologías de la Información en los Laboratorios del SIUDT.</h2>
                         <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>
                                 En el contexto del pabellón 16, donde se ubican diversos laboratorios de informática, una planificación estratégica adecuada ayudaría a identificar qué tipo de tecnología es realmente necesaria, cómo debe organizarse su mantenimiento y qué prioridades deben atenderse primero, ya sea en términos de renovación de equipos, conectividad de red, licencias de software o seguridad informática.
@@ -169,6 +157,122 @@ function Part2() {
                                 <br />Al igual que con el dominio "Planear y Organizar" (PO) de COBIT 4.1, la planificación estratégica en este contexto no busca simplemente añadir más computadoras o programas, sino establecer una ruta clara que permita usar los recursos de manera más inteligente, evitando la improvisación y asegurando que cada acción tecnológica tenga un propósito claro y medible.
 
                                 <br />En resumen, aplicar una planificación estratégica de TI en los laboratorios del SIUDT no solo optimiza el uso de la infraestructura actual, sino que también fortalece la capacidad de la universidad para adaptarse a los cambios, mejorar los servicios y ofrecer un entorno más moderno y funcional para toda la comunidad universitaria.
+                            </p>
+                        </section>
+
+                        <h2>Factores Internos y Externos.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                La planificación estratégica de las Tecnologías de la Información (TI) en entornos universitarios requiere un análisis exhaustivo de los factores internos y externos que influyen en su desarrollo y ejecución (Learning, 2022).
+                            </p>
+                        </section>
+
+                        <h3>Factores Internos</h3>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Los factores internos son aquellos elementos dentro de la organización que pueden ser controlados y gestionados directamente. Incluyen:
+
+                                <ul>
+                                    <li>Recursos Humanos: Capacitación, experiencia y habilidades del personal técnico y administrativo.</li>
+                                    <li>Infraestructura Tecnológica: Estado y capacidad de los equipos, redes y sistemas de información.</li>
+                                    <li>Procesos Internos: Eficiencia y eficacia de los procedimientos operativos y administrativos.</li>
+                                    <li>Cultura Organizacional: Valores, normas y prácticas que afectan la adopción y uso de tecnologías.</li>
+                                </ul>
+
+                              Estos factores determinan las fortalezas y debilidades internas que pueden potenciar o limitar la implementación de estrategias tecnológicas (Learning, 2022).
+                            </p>
+                        </section>
+
+                        <h3>Factores Externos</h3>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Los factores externos son elementos fuera del control directo de la organización, pero que afectan su desempeño. Incluyen:
+
+                                <ul>
+                                    <li>Avances Tecnológicos: Innovaciones que pueden ofrecer nuevas oportunidades o requerir adaptaciones.</li>
+                                    <li>Políticas Gubernamentales: Regulaciones y normativas que afectan la gestión de TI.</li>
+                                    <li>Condiciones Económicas: Disponibilidad de recursos financieros y presupuestarios.</li>
+                                    <li>Demanda del Usuario: Expectativas y necesidades cambiantes de estudiantes y docentes</li>
+                                </ul>
+
+                              El análisis de estos factores permite identificar oportunidades y amenazas en el entorno que deben ser consideradas en la planificación estratégica (Guerrero Pulido, 2018).
+                            </p>
+                        </section>
+
+                        <h2>Actores, Recursos y Procesos de la Gestión TI.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                La gestión efectiva de las TI en instituciones educativas depende de la interacción entre diversos actores, la disponibilidad de recursos y la eficiencia de los procesos implementados (Pimentel Villalaz, 1999).
+                            </p>
+                        </section>
+
+                        <h3>Factores Externos</h3>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Administradores de TI: Responsables de la planificación, implementación y mantenimiento de sistemas tecnológicos
+
+                                <br />Docentes y Estudiantes: Usuarios finales que interactúan con las plataformas y herramientas tecnológicas.
+
+                                <br />Autoridades Institucionales: Toman decisiones estratégicas y asignan recursos para proyectos de TI.
+
+                                <br />Proveedores Externos: Ofrecen servicios y productos tecnológicos necesarios para la operación institucional (Pimentel Villalaz, 1999).
+                            </p>
+                        </section>
+
+                        <h3>Recursos Tecnológicos</h3>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Hardware y Software: Equipos y aplicaciones que soportan las actividades académicas y administrativas.
+
+                                <br />Infraestructura de Red: Conectividad y sistemas de comunicación que facilitan el acceso a la información..
+
+                                <br />Bases de Datos y Sistemas de Información: Almacenan y procesan datos relevantes para la toma de decisiones.
+                            </p>
+                        </section>
+
+                        <h3>Procesos de Gestión</h3>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Planificación Estratégica: Definición de objetivos y estrategias para el uso de TI.
+                                <br />Implementación de Proyectos: Desarrollo y despliegue de soluciones tecnológicas.
+                                
+                                <br />Mantenimiento y Soporte: Aseguramiento de la continuidad y eficiencia de los sistemas.
+
+                                <br />Evaluación y Mejora Continua: Monitoreo del desempeño y ajustes necesarios para optimizar resultados.
+
+                                <br />La coordinación efectiva entre estos actores, recursos y procesos es esencial para lograr una gestión de TI alineada con los objetivos institucionales (Rodríguez, 2015).
+                            </p>
+                        </section>
+
+                        <h2>Análisis FODA Aplicado a TI.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                El análisis FODA (Fortalezas, Oportunidades, Debilidades y Amenazas) es una herramienta estratégica que permite evaluar la situación actual de la gestión de TI en una organización.
+
+                                <br />Fortalezas: actividades y atributos internos de una organización que contribuyen y apoyan al logro de los objetivos de una institución. 
+
+                                <br />Debilidades: actividades y atributos internos de una organización que inhiben o dificultan el éxito de una empresa. 
+
+                                <br />Oportunidades: eventos, hechos o tendencias en el entorno de una organización que podrían facilitar o beneficiar el desarrollo de ésta, si se aprovechan en forma oportuna y adecuada. 
+                                
+                                <br />Amenazas: eventos, hechos o tendencias en el entorno de una organización que inhiben, limitan o dificultan su desarrollo operativo (Serna, 2000).
+
+                                <br />Aplicar el análisis FODA en la gestión de TI permite identificar áreas de mejora y desarrollar estrategias que fortalezcan la posición de la institución en un entorno dinámico.
+                            </p>
+                        </section>
+
+                        <h1 id="Automatización de Procesos en TI" className="section-fade" style={{ animationDelay: '0.3s' }}>Automatización de Procesos en TI</h1>
+                        <h2>Conceptos y beneficios.</h2>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                La <strong>automatización de procesos</strong> consiste en el uso de tecnologías para ejecutar tareas recurrentes o procesos de negocio con mínima intervención humana, mejorando eficiencia, precisión y control (López Supelano, 2025).
+
+                                <br />Dentro de este marco, el gobierno de Tecnologías de la Información (TI) emerge como una respuesta a los cambios derivados del dinamismo de la economía, caracterizado por la expansión de datos masivos, analítica de datos avanzada, datos abiertos y tecnologías como la web semántica. Estos desarrollos han generado nuevas demandas sociales, sobre todo cuando se trata de temas de privacidad y ciberseguridad, que requieren un reajuste en las políticas, normativas, estructuras internas y sistemas tecnológicos. (Janssen & Voort, 2016) (Twinomurinzi, Phahlamohlaka, & Byrne, 2012).
+
+                                <br />En este mismo sentido, el gobierno de TI se orienta al desarrollo estratégico de la tecnología alineada a los objetivos de la organización, diferenciándose de la gestión de TI, que se enfoca en la operación y administración cotidiana de los sistemas tecnológicos. Según (Juiz, Gómez, & Barceló, 2012) y (Welch & Feeney, 2014), este enfoque busca evidenciar que las TI constituyen un activo estratégico que genera valor, impulsando mecanismos de alineación entre las decisiones tecnológicas y los propósitos del negocio. Entonces, se puede decir que el gobierno de TI, IT Governance o ITG (Information Technology Governance) se define como los procesos que aseguran el uso efectivo y eficiente de TI para permitir que una organización logre sus objetivos estratégicos.
+
+                                <br />Uno de los marcos más reconocidos por la comunidad académica y profesional para definir los componentes esenciales del gobierno de Tecnologías de la Información (TI) es el modelo propuesto por el IT Governance Institute en su versión COBIT 4.1 (2007). Este marco establece cinco dimensiones fundamentales para un gobierno efectivo de TI: alineación estratégica, que busca garantizar que las iniciativas tecnológicas estén en concordancia con los objetivos del negocio; la entrega de valor, que se refiere a asegurar que los servicios y soluciones de TI generen beneficios concretos a través de un ciclo eficiente de prestación; gestión de riesgos, que contempla la protección de los activos tecnológicos, la preparación ante desastres y el cumplimiento normativo; administración de recursos, que tiene como fin optimizar el uso y desarrollo de los recursos disponibles en TI y por último la medición del desempeño que permite evaluar resultados, identificar desviaciones y aplicar mejoras cuando sea necesario (Valencia, Marulanda, & López, 2018).
+
                             </p>
                         </section>
 
