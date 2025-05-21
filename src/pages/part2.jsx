@@ -61,17 +61,34 @@ function Part2() {
                     <div className="part-container">
 
                         {/*a los h1 denles el id correspodiente a la parte del documento */}
-                        <h1 id="Conceptos Básicos de Planificación Estratégica" className="section-fade" style={{ animationDelay: '0.3s' }}>Introducción</h1>
+                        <h1 id="Conceptos Básicos de Planificación Estratégica" className="section-fade" style={{ animationDelay: '0.3s' }}>Conceptos Básicos de Planificación Estratégica</h1>
                         {/*los dividien por secciones */}
                         {/*fijense en el documento al para saber donde meter los <br/> que son saltos de linea */}
                         <section className="section-fade" style={{ animationDelay: '0.5s' }}>
-                            <p>
-                                El estudio se centra en el análisis de la planificación estratégica de las Tecnologías de la Información (TI) y la gestión del Sistema de Información Universitario para el Desarrollo Tecnológico (SIUDT) de la UNAN-Managua. Estos elementos se articulan dentro del entorno de los laboratorios del pabellón 16, en el primer semestre del año 2025, donde se evidencia la necesidad de reforzar la etapa de planificación para garantizar la eficiencia y sostenibilidad del sistema. La investigación se desarrolla dentro del dominio “Planear” de COBIT 4.1, el cual aborda componentes esenciales como la alineación estratégica, la gestión de recursos y la formulación de objetivos tecnológicos alineados a las metas institucionales.
-                                La planificación estratégica de las Tecnologías de la Información (TI) es esencial para el desarrollo efectivo de las instituciones educativas, permitiendo optimizar recursos, mejorar la toma de decisiones y garantizar la alineación con los objetivos institucionales (BerryDunn, s.f.).
+                            <h2>¿Qué es la Planificación?</h2>
+                            <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                                <p>
+                                    Según (Azkue, 2018) la planificación es un modelo o plan que se utiliza como guía para implementar diversos proyectos y objetivos. Es un listado que detalla de forma ordenada los procesos, los recursos y el tiempo que serán necesarios para solucionar un problema determinado o para alcanzar los objetivos de negocio.
+                                
+                                    <br /> Por otro lado, (Westreicher, 2020) dice La planificación es la creación, asignación y distribución temporal de unas tareas para conseguir un objetivo. La planificación se convierte en una guía con los pasos a seguir para llegar a la meta propuesta.
+                                </p>
+                            </section>
 
-                                <br /> La presente investigación se enfoca en el análisis del SIUDT de la UNAN-Managua, específicamente en los laboratorios del pabellón 16, donde se busca fortalecer la fase de planificación estratégica para mejorar la operatividad del sistema. La importancia de este estudio radica en la necesidad de alinear los procesos tecnológicos con las metas institucionales, considerando que el buen uso de las TI puede potenciar la eficiencia administrativa y académica. A través de este análisis, se pretende identificar las causas que dificultan la implementación efectiva de la planificación estratégica de TI en el contexto universitario y proponer soluciones que aseguren la sostenibilidad y continuidad del sistema. Este trabajo se desarrolla bajo un enfoque mixto y un paradigma socio-crítico, analizando tanto aspectos cuantitativos como cualitativos que permitan comprender las problemáticas y proponer mejoras concretas en la gestión del SIUDT.
+                            <h2>Tipos de Planificación</h2>
+                            <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                                <p>
+                                    Según (Azkue, 2018) los principales tipos de planificación son:
+                                
+                                    <br />
+                                    <ul>
+                                        <li><strong>Planificación estratégica: </strong>Consiste en un plan integral de negocio que permite el funcionamiento de una organización. Su ejecución depende de la toma de decisiones de la gerencia, y contempla los aspectos financieros, la misión y visión, los objetivos a largo plazo y la estructura de la empresa.</li>
+                                        <li><strong>Planificación táctica: </strong>Consiste en repasar las metas generales para definir objetivos específicos. Su ejecución depende de cada responsable o cada área correspondiente de una organización, que debe cumplir con sus respectivas tareas y funciones.</li>
+                                        <li><strong>Planificación operativa: </strong>Consiste en una serie de acciones básicas o fundamentales para garantizar el desempeño de una organización o un proyecto en el corto o mediano plazo. La planificación operativa se centra en los recursos disponibles, la manera en que se hará uso de los recursos y en las tareas necesarias para alcanzar los objetivos. Depende los directores o responsables de área, que contribuyen a implementar y controlar un plan operativo.</li>
+                                        <li><strong>Planificación normativa: </strong>Consiste en una serie de reglas y normas que la gerencia de una organización establece durante un período determinado para alcanzar sus objetivos.</li>
+                                    </ul>
+                                </p>
+                            </section>
 
-                            </p>
                         </section>
 
                         <h1 id="Antecedentes" className="section-fade" style={{ animationDelay: '0.3s' }}>Antecedentes</h1>
