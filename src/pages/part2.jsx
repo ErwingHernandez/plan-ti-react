@@ -10,7 +10,7 @@ function Part2() {
     const navigate = useNavigate();
 
     const titulos = [
-        "Introducción",
+        "Conceptos Básicos de Planificación Estratégica",
         "Antecedentes",
         "Justificacion",
         "Planteamiento del Problema"
@@ -61,7 +61,7 @@ function Part2() {
                     <div className="part-container">
 
                         {/*a los h1 denles el id correspodiente a la parte del documento */}
-                        <h1 id="Introducción" className="section-fade" style={{ animationDelay: '0.3s' }}>Introducción</h1>
+                        <h1 id="Conceptos Básicos de Planificación Estratégica" className="section-fade" style={{ animationDelay: '0.3s' }}>Introducción</h1>
                         {/*los dividien por secciones */}
                         {/*fijense en el documento al para saber donde meter los <br/> que son saltos de linea */}
                         <section className="section-fade" style={{ animationDelay: '0.5s' }}>
