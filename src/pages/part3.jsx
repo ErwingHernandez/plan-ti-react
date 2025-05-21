@@ -83,7 +83,7 @@ function Part3() {
 
                         <section>
                             <p>
-                                <img src="/Analisis foda peti.JPEG" alt=""/>
+                                <img src="/Analisis foda peti.jpeg" alt=""/>
                             </p>
                         </section>
 
@@ -92,7 +92,7 @@ function Part3() {
 
                         <section>
                             <p>
-                                <img src="/Foda ponderado.PNG" alt=""/>
+                                <img src="/Foda ponderado.png" alt=""/>
                                 <img src="/Resultado.JPG" alt=""/>
                             </p>
                         </section>
