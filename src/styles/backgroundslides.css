@@ -1,0 +1,38 @@
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #000;
+}
+
+.background-slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background-slideshow .show {
+  opacity: 1;
+  z-index: 0;
+}
+
+.background-slideshow .filtro{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* Ajusta opacidad aquí */
+  z-index: 1;
+  pointer-events: none; 
+}

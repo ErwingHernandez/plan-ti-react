@@ -1,27 +1,57 @@
 import { useState } from "react";
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import '../styles/document.css';
 import '../styles/etiquetas.css';
 
 function Part1() {
 
+    const [seleccionado, setSeleccionado] = useState(null);
+    const [exiting, setExiting] = useState(false);
+    const navigate = useNavigate();
+
+    const titulos = [
+        "Introducción",
+        "Antecedentes",
+        "Justificacion",
+        "Planteamiento del Problema"
+    ];
+
+    const handleSeleccion = (titulo) => {
+        setSeleccionado(titulo);
+        const elemento = document.getElementById(titulo);
+        if (elemento) {
+            elemento.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const handleGoHome = () => {
+        setExiting(true);
+        setTimeout(() => {
+            navigate("/");
+        }, 500);
+    };
+
     return (
         <>
 
-            <div className="principal-container">
+            <div className={`principal-container ${exiting ? 'fade-out-down' : 'fade-in-up'}`}>
                 <div className="container-titulos">
                     <nav>
                         <ul>
                             {/*aqui se realiza las etiquetas siempre se inicia con # que hace referencia a los titulos
                             tienen que ser los mismos nombres para que funcione */}
-                            <li><a href="#Introducción">Introduccion</a></li>
-                            <li><a href="#Antecedentes">Antecedentes</a></li>
-                            <li><a href="#Justificacion">Justificación</a></li>
-                            <li><a href="#Planteamiento del Problema">Planteamiento del Problema</a></li>
-
-                            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                                <li><a>Pagina Principal</a></li>
-                            </Link>
+                            {titulos.map((titulo) => (
+                                <li
+                                    key={titulo}
+                                    onClick={() => handleSeleccion(titulo)}
+                                    className={seleccionado === titulo ? "seleccionado" : ""}
+                                >
+                                    <a href={`#${titulo}`}>{titulo}</a>
+                                </li>
+                            ))}
+                            <li onClick={handleGoHome} style={{ cursor: 'pointer' }}>
+                                Página Principal
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -31,10 +61,10 @@ function Part1() {
                     <div className="part-container">
 
                         {/*a los h1 denles el id correspodiente a la parte del documento */}
-                        <h1 id="Introducción">Introducción</h1>
+                        <h1 id="Introducción" className="section-fade" style={{ animationDelay: '0.3s' }}>Introducción</h1>
                         {/*los dividien por secciones */}
                         {/*fijense en el documento al para saber donde meter los <br/> que son saltos de linea */}
-                        <section>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>
                                 El estudio se centra en el análisis de la planificación estratégica de las Tecnologías de la Información (TI) y la gestión del Sistema de Información Universitario para el Desarrollo Tecnológico (SIUDT) de la UNAN-Managua. Estos elementos se articulan dentro del entorno de los laboratorios del pabellón 16, en el primer semestre del año 2025, donde se evidencia la necesidad de reforzar la etapa de planificación para garantizar la eficiencia y sostenibilidad del sistema. La investigación se desarrolla dentro del dominio “Planear” de COBIT 4.1, el cual aborda componentes esenciales como la alineación estratégica, la gestión de recursos y la formulación de objetivos tecnológicos alineados a las metas institucionales.
                                 La planificación estratégica de las Tecnologías de la Información (TI) es esencial para el desarrollo efectivo de las instituciones educativas, permitiendo optimizar recursos, mejorar la toma de decisiones y garantizar la alineación con los objetivos institucionales (BerryDunn, s.f.).
@@ -44,9 +74,9 @@ function Part1() {
                             </p>
                         </section>
 
-                        <h1 id="Antecedentes">Antecedentes</h1>
+                        <h1 id="Antecedentes" className="section-fade" style={{ animationDelay: '0.3s' }}>Antecedentes</h1>
 
-                        <section>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>
                                 Los laboratorios del pabellón 16 del Sistema de Información Universitario para el Desarrollo Tecnológico (SIUDT) de la UNAN-Managua son espacios importantes para el desarrollo académico y práctico de los estudiantes. Sin embargo, hasta el momento no cuentan con un Plan Estratégico de Tecnologías de la Información (PETI) que ayude a organizar y mejorar el uso de los recursos tecnológicos que se utilizan en ellos.
 
@@ -68,8 +98,8 @@ function Part1() {
                             </p>
                         </section>
 
-                        <h1 id="Justificacion">Justificación</h1>
-                        <section>
+                        <h1 id="Justificacion" className="section-fade" style={{ animationDelay: '0.3s' }}>Justificación</h1>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>
                                 El desarrollo y fortalecimiento de la infraestructura tecnológica es fundamental para garantizar una educación de calidad en las instituciones de educación superior. En el caso del Sistema de Información y Desarrollo Tecnológico (SIUDT) de la UNAN-Managua, específicamente los laboratorios del pabellón 16, se identifican desafíos que comprometen su operatividad y el aprovechamiento académico. Esta propuesta se justifica en la necesidad de transformar estos espacios mediante la implementación de un Plan Estratégico de Tecnología de la Información (PETI), apoyado en el dominio “Planear” del marco COBIT 4.1, que permitirá gestionar de forma integral y sostenible los recursos tecnológicos, promoviendo la eficiencia y actualización constante a través de herramientas como plataformas de monitoreo, software de gestión de aulas y sistemas de reserva digital.
 
@@ -82,24 +112,24 @@ function Part1() {
                             </p>
                         </section>
 
-                        <h1 id="Planteamiento del Problema">Planteamiento del problema</h1>
+                        <h1 id="Planteamiento del Problema" className="section-fade" style={{ animationDelay: '0.3s' }}>Planteamiento del problema</h1>
                         <h2>Caracterización del problema.</h2>
-                        <section>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>Los laboratorios ubicados en el Pabellón 16, pertenecientes al Sistema de Información y Desarrollo Tecnológico (SIUDT), de la UNAN-Managua enfrentan una variedad de impedimentos que afectan su operatividad, sostenibilidad y aprovechamiento académico. A pesar de ser de importancia para la formación de sus estudiantes estos espacios presentan debilidades en cuanto al cumplimiento en mantenimiento, gestión, administración y actualización de recursos tecnológicos.</p>
                         </section>
 
                         <h2>Delimitacion del problema.</h2>
-                        <section>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>Actualmente, la poca frecuencia con la que se realiza el mantenimiento preventivo ha provocado el deterioro progresivo de más de la mitad de los equipos de cómputo disminuyendo su vida útil, lo cual a largo plazo generara mayores costos al realizar el mantenimiento correspondiente. Otras de las debilidades detectadas están relacionadas con la falta de organización por parte de los responsables para ejecutar de forma eficiente las actividades que aseguren el buen funcionamiento de los laboratorios, como la gestión de inventarios, el seguimiento de incidencias y la planificación operativa. Todo esto se ve agravado por el limitado acceso de la herramienta actualmente usada porque no facilita una administración efectiva a las necesidades actuales de los laboratorios provocando que algunos laboratorios queden vacíos sin que los encargados o docentes se den cuenta, lo que impide que puedan ser aprovechados por otros grupos que los necesitan.</p>
                         </section>
 
                         <h2>Formulación del problema.</h2>
-                        <section>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>¿Cómo puede mejorarse la operatividad, sostenibilidad y aprovechamiento académico fortaleciendo el cumplimiento en mantenimiento, gestión, administración y actualización de recursos tecnológicos de los laboratorios del Pabellón 16 de la UNAN-Managua mediante un plan estratégico de la información?</p>
                         </section>
 
                         <h2>Sistematización del problema</h2>
-                        <section>
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
                             <p>Identificado los factores que inciden en la gestión y aprovechamiento de los laboratorios del Pabellón 16 de la UNAN-Managua y orientado por la formulación del problema, se plantean las siguientes preguntas de sistematización para resolver el problema objeto de investigación. </p>
                             <div className="pregunta-card">
                                 ¿Qué debilidades presenta actualmente la herramienta utilizada para monitorear y gestionar los laboratorios?
@@ -122,5 +152,6 @@ function Part1() {
 
     );
 }
+
 
 export default Part1;

@@ -27,3 +27,9 @@
     text-decoration: none;
     display: block;
 }
+
+.container-titulos li.seleccionado {
+    transform: translateX(15px);
+    background-color: #004a99;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
