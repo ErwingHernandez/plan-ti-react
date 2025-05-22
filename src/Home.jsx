@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -27,31 +27,52 @@ function Home() {
                 }
                 transition={{ duration: 0.5 }}
             >
-                <div id='documento'>
-                    <div className='card' id='Card1' onClick={() => handleCardClick("/part1")}>
-                        Introducción
+                <div className='contenedor-general'>
+
+
+                    {/*Contenedor de las partes */}
+                    <div className='contenedor-tarjetas'>
+                        <div id='documento'>
+                            <div className='card' id='Card1' onClick={() => handleCardClick("/part1")}>
+                                Introducción
+                            </div>
+
+                            <div className='card' id='Card2' onClick={() => handleCardClick("/part2")}>
+                                Marco Teórico
+                            </div>
+
+                            <div className='card' id='Card3' onClick={() => handleCardClick("/part3")}>
+                                Desarrollo
+                            </div>
+
+                            <div className='card' id='Card4' onClick={() => handleCardClick("/part4")}>
+                                1 part
+                            </div>
+
+
+                        </div>
+
+                        <div id='accion' onClick={() => handleCardClick("/planaccion")}>
+                            <div id='card5'>Plan de Acción</div>
+                        </div>
+                    </div>
+                    {/*Contenedor de las partes */}
+
+
+                    {/*Contenedor del panel de la derecha */}
+                    <div className='right-panel'>
+                        <div id='ob.ti' className='card' onClick={() => handleCardClick("/objetivosti")}>
+                            objetivos de ti
+                        </div>
+                        <div id='anexos' className='card'>
+                            Anexos
+                        </div>
+
                     </div>
 
-                    <div className='card' id='Card2' onClick={() => handleCardClick("/part2")}>
-                        Marco Teórico
-                    </div>
-
-                    <div className='card' id='Card3' onClick={() => handleCardClick("/part3")}>
-                        Desarrollo
-                    </div>
-
-                    <div className='card' id='Card4' onClick={() => handleCardClick("/part4")}>
-                        1 part
-                    </div>
+                      {/*Contenedor del panel de la derecha */}
                 </div>
 
-                <div id='accion' onClick={() => handleCardClick("/planaccion")}>
-                    <div id='card5'>Plan de Acción</div>
-                </div>
-
-                <div id='inventario' onClick={() => handleCardClick("/inventario")}>
-                    Inventario
-                </div>
             </motion.div>
 
         </>

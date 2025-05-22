@@ -5,7 +5,7 @@ import Part1 from './pages/part1'
 import Part2 from './pages/part2'
 import Part3 from './pages/part3'
 import Part4 from './pages/part4'
-import Inventario from './pages/inventario'
+import ObjetivosTi from './pages/objetivosti.jsx'
 import Planaccion from './pages/planaccion'
 import Backgroundslides from './components/backgroundslides.jsx'
 
@@ -22,7 +22,7 @@ function App() {
         <Route path="/part2" element={<Part2 />} />
         <Route path="/part3" element={<Part3 />} />
         <Route path="/part4" element={<Part4 />} />
-        <Route path="/inventario" element={<Inventario />} />
+        <Route path="/objetivosti" element={<ObjetivosTi />} />
         <Route path="/planaccion" element={<Planaccion />} />
         
       </Routes>
