@@ -27,8 +27,10 @@
 .swiper-slide-next .card-ti,
 .swiper-slide-prev .card-ti {
   filter: blur(2px);
-  opacity: 0.85; /* Ajusta la opacidad si estás usando un blur menor */
-  transform: scale(0.98); /* Ajusta el escalado para que sea menos pronunciado */
+  opacity: 0.85;
+  /* Ajusta la opacidad si estás usando un blur menor */
+  transform: scale(0.98);
+  /* Ajusta el escalado para que sea menos pronunciado */
 }
 
 
@@ -39,7 +41,8 @@
   border-radius: 20px;
   padding: 30px;
   width: 100%;
-   width: 100%;/* Ajusta según tu preferencia de anchura */
+  width: 100%;
+
 
   max-height: 520px;
   box-shadow: 0 8px 20px rgba(0, 40, 86, 0.15);
@@ -47,37 +50,74 @@
   color: #002856;
   overflow: hidden;
 
-   will-change: transform, filter, opacity;
+  will-change: transform, filter, opacity;
 }
 
 .card-ti h3 {
   color: #0061A0;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .card-ti .titulo {
   font-weight: bold;
   font-size: 1.1rem;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .card-ti .factores,
 .card-ti .estrategias {
-  margin-top: 10px;
   font-size: 0.95rem;
   line-height: 1.4;
+  margin-bottom: 5px;
+
 }
 
 .card-ti .factores strong,
 .card-ti .estrategias strong {
+  position: fixed;
   color: #FDB913;
   font-weight: 600;
+  width: 85%;
+  background-color: #ffffff;
 }
+
+.card-ti .estrategias {
+  max-height: 130px;
+  overflow-y: auto;
+  padding-right: 1px;
+}
+
+.card-ti .factores {
+  max-height: 120px;
+  overflow-y: auto;
+  padding-right: 1px;
+}
+
+.card-ti .estrategias::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-ti .estrategias::-webkit-scrollbar-thumb {
+  background-color: #f80202a9;
+  border-radius: 4px;
+}
+
+.card-ti .factores::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-ti .factores::-webkit-scrollbar-thumb {
+  background-color: #f80202a9;
+  border-radius: 4px;
+}
+
+
+
 
 .card-ti ul {
   list-style-type: disc;
   padding-left: 18px;
+
 }
 
 .card-ti li {
@@ -88,13 +128,15 @@
 .home-button-container {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centra el botón horizontalmente */
-  margin-top: 20px; /* Espacio entre el carrusel y el botón, si no usas margin-bottom en .carousel-container */
+  justify-content: center;
+  /* Centra el botón horizontalmente */
+  /* Espacio entre el carrusel y el botón, si no usas margin-bottom en .carousel-container */
 }
 
 /* Estilos del botón en sí */
 .home-button {
-  background-color: #0061A0; /* Color principal de tu paleta */
+  background-color: #0061A0;
+  /* Color principal de tu paleta */
   color: white;
   padding: 15px 30px;
   border: none;
@@ -107,14 +149,15 @@
 }
 
 .home-button:hover {
-  background-color: #00457A; /* Un tono más oscuro al pasar el ratón */
-  transform: translateY(-2px); /* Un ligero levantamiento al pasar el ratón */
+  background-color: #00457A;
+  /* Un tono más oscuro al pasar el ratón */
+  transform: translateY(-2px);
+  /* Un ligero levantamiento al pasar el ratón */
   box-shadow: 0 6px 15px rgba(0, 40, 86, 0.3);
 }
 
 .home-button:active {
-  transform: translateY(0); /* Vuelve a su posición original al hacer clic */
+  transform: translateY(0);
+  /* Vuelve a su posición original al hacer clic */
   box-shadow: 0 2px 5px rgba(0, 40, 86, 0.1);
 }
-
-
