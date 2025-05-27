@@ -77,8 +77,8 @@
   position: fixed;
   color: #FDB913;
   font-weight: 600;
-  width: 85%;
-  background-color: #ffffff;
+  width: 89%;
+  background: linear-gradient(to bottom right, #ffffff, #f9fafc);
 }
 
 .card-ti .estrategias {
@@ -161,3 +161,6 @@
   /* Vuelve a su posición original al hacer clic */
   box-shadow: 0 2px 5px rgba(0, 40, 86, 0.1);
 }
+
+
+
