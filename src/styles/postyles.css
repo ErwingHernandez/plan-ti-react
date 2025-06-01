@@ -1,0 +1,64 @@
+.contenedor-general {
+    border: 1px solid red;
+    width: 99dvw;
+    height: 98dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-tarjetaspo {
+    border: 1px solid red;
+    width: 99dvw;
+    height: 30dvh;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-infotarjetas {
+    background-color: wheat;
+    border: 1px solid red;
+    width: 99dvw;
+    height: 68dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+
+.card-PO {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 120px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-PO span {
+    color: black;
+}
+
+.card-PO:hover {
+    transform: translateY(-15px) scale(1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card-PO.selecc {
+    transform: translateY(-15px) scale(1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    border: #007bff solid;
+}
+
+.card-PO.selected:hover {
+    transform: translateY(-15px) scale(1.05);
+    /* Mantiene el efecto del seleccionado */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: #007bff;
+}

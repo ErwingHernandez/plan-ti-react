@@ -1,0 +1,148 @@
+.contenedor-directrices {
+    display: flex;
+    flex-direction: column; /* Coloca las tablas una encima de la otra */
+    gap: 40px; /* Espacio entre las dos tablas */
+    padding: 20px;
+    background-color: #f8f9fa; /* Un fondo suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Espacio alrededor del contenedor principal */
+}
+
+.titulo-tabla, .titulo-matriz {
+    font-size: 1.5em;
+    color: #004085; /* O el color que hayas elegido para tus h3 */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.subtitulo-matriz {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para todas las tablas */
+.table-wrapper, .table-raci-wrapper {
+    overflow-x: auto; /* Permite el scroll horizontal si la tabla es más ancha que el contenedor */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%; /* Asegura que la tabla intente ocupar el ancho disponible */
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #dee2e6; /* Bordes suaves */
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+thead th {
+    background-color: #e9ecef; /* Fondo para encabezados */
+    font-weight: bold;
+    text-align: center;
+    color: #343a40;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Rayas para mayor legibilidad */
+}
+
+tbody tr:hover {
+    background-color: #e2f0f7; /* Resaltar fila al pasar el ratón */
+}
+
+.nota-tabla {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* --- Estilos Específicos para la Tabla de Entradas/Salidas --- */
+.tabla-entradas-salidas-container table th.header-desde { background-color: #cfe2ff; } /* Azul más claro */
+.tabla-entradas-salidas-container table th.header-salidas { background-color: #d1e7dd; } /* Verde claro */
+.tabla-entradas-salidas-container table th.header-hacia { background-color: #ffeeba; } /* Amarillo claro */
+
+/* --- Estilos Específicos para la Matriz RACI --- */
+.matriz-raci-container table {
+    border-collapse: collapse; /* Mantenemos colapsado para bordes limpios si no hay hacks diagonales complejos */
+}
+
+.matriz-raci-container th.corner-cell {
+    /* Estilos para la celda superior izquierda */
+    background-color: #e9ecef;
+    border-bottom: none;
+    border-right: none;
+}
+
+.matriz-raci-container th.funciones-header {
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.matriz-raci-container th.actividades-header {
+    background-color: #e9ecef;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* La magia de las celdas diagonales para las funciones */
+.diagonal-header {
+     /* Ajusta la altura para dar espacio suficiente al texto rotado. */
+    /* Empieza con un valor generoso y ajústalo según el texto más largo. */
+    height: 120px;
+    padding: 0; /* Asegúrate de que el TH no tenga padding, el SPAN lo manejará */
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    position: relative; /* Esencial para posicionar el span rotado */
+    overflow: hidden; /* Oculta cualquier parte del texto que se salga, útil para depurar */
+    background-color: #e9ecef; /* Fondo para el encabezado */
+    text-align: center; /* Alinea el contenido del TH */
+}
+
+.diagonal-header span {
+    display: block; /* El span debe ser un bloque para que las transformaciones funcionen bien */
+    width: 100%; /* El span ocupa todo el ancho del TH */
+    /* No es necesario fijar el height del span, el TH ya lo tiene. */
+
+    /* Posicionamiento del texto rotado */
+    position: absolute;
+    bottom: 0; /* Posiciona el span en la parte inferior del TH */
+    left: 0; /* Posiciona el span en la parte izquierda del TH */
+
+    /* Origen de la transformación: esquina inferior izquierda del span */
+    transform-origin: 0% 100%;
+
+    /* La transformación principal */
+    /* Ajusta los valores de translateX y translateY para posicionar el texto */
+    /* rotate(-45deg) rota 45 grados en sentido anti-horario */
+    /* translateX(x) mueve horizontalmente, translateY(y) mueve verticalmente */
+    transform: rotate(-45deg) translateX(-10px) translateY(10px); /* Valores ajustados */
+
+    white-space: nowrap; /* Impide que el texto se envuelva a la siguiente línea */
+    font-weight: bold;
+    color: #343a40; /* Color del texto */
+
+    /* Espacio para que el texto no se pegue a los bordes rotados */
+    padding-left: 5px; /* Espacio a la izquierda del texto rotado */
+    padding-bottom: 5px; /* Espacio debajo del texto rotado */
+}
+
+
+/* Estilos para las celdas de datos de la Matriz RACI (C, I, A/R, R, etc.) */
+.matriz-raci-container tbody td {
+    text-align: center; /* Centra el texto C, I, A, R */
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #007bff; /* Color para los caracteres RACI si quieres que destaquen */
+    width: 30px; /* Un ancho fijo para las celdas de RACI para que sean uniformes */
+    min-width: 30px; /* Asegura que no se hagan más pequeñas que esto */
+}
