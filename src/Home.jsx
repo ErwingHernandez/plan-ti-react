@@ -64,7 +64,7 @@ function Home() {
 
                             <div className='card card-styled' onClick={() => handleCardClick("/part4")}>
                                 <FontAwesomeIcon icon={faLayerGroup}  bounce  size="2x" />
-                                <span>Primera Parte</span>
+                                <span>PO</span>
                             </div>
 
 
