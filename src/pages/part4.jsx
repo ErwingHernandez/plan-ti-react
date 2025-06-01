@@ -170,15 +170,6 @@ function Part4() {
                                         <tr>
                                             <th className="actividades-header">Actividades</th>
                                             {/* Celda vacía en la imagen después de Actividades */}
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         {/* Filas de Actividades */}
                                         <tr>

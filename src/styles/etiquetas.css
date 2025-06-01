@@ -13,7 +13,7 @@
     border-radius: 0 8px 8px 0;
     font-weight: bold;
     width: auto; 
-    max-width: 200px;
+    max-width: 150px;
     transition: background-color 0.3s;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
