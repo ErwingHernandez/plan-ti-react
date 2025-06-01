@@ -1,230 +1,167 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import '../styles/document.css';
 import '../styles/etiquetas.css';
 import '../styles/postyles.css';
 import '../styles/tablas.css';
-import { div } from "framer-motion/client";
+import infoparrafos from '../pages/poData.js';
+
+
 
 function Part4() {
+    // Renombrar a 'selectedCardIndex' para consistencia, o asegúrate de usar 'seleccardpoIndex' en todas partes
+    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
-
-    const infoparrafos = [{
-        titulo: "PO1",
-
-        indicadores: ["% de equipos funcionales disponibles por semana",
-            "Tiempo promedio de resolución de incidencias",
-        ],
-
-        contenido: [
-            {
-                subtema: "PO1.1 Administración del Valor de TI",
-                parrafo: "El plan estratégico de TI deberá asegurar que cada proyecto tecnológico que se realiza en el pabellón 16 pase por un filtro que garantice la factibilidad de la inversión, es decir que no será solo un gasto sino un aporte al desarrollo de los estudiantes que utilicen los laboratorios."
-            },
-            {
-                subtema: "PO1.2 Alineación de TI con el Negocio",
-                parrafo: "Asegurar que el Plan Estratégico de TI este alineado a los objetivos de la universidad, tomando en cuenta el estado actual de los laboratorios y las necesidades de los usuarios de tal modo que se pueda establecer prioridades que cumplan las metas a mediano y largo plazo"
-            },
-
-        ]
+    const handleCardClick = (index) => { // Renombré para ser consistente con el ejemplo anterior, pero puedes mantener cardpoClick
+        setSelectedCardIndex(index);
     }
 
-    ]
-
-
-    const [seleccardpoIndex, setSeleccardpoIndex] = useState(null);
-
-    const cardpoClick = (index) => {
-        setSeleccardpoIndex(index);
-    }
+    // Obtener los datos del PO actualmente seleccionado
+    const currentPOData = selectedCardIndex !== null ? infoparrafos[selectedCardIndex] : null;
 
     return (
         <>
             <div className="contenedor-general">
 
                 <div className="contenedor-tarjetaspo">
-
+                    {/* Renderiza las tarjetas de PO dinámicamente usando el título del infoparrafos */}
                     {infoparrafos.map((po, index) => (
-                        <div className={`card-PO ${seleccardpoIndex === index ? "selecc" : ""}`} key={index}
-                            onClick={() => cardpoClick(index)}>
+                        <div
+                            className={`card-PO ${selectedCardIndex === index ? "selecc" : ""}`}
+                            key={index}
+                            onClick={() => handleCardClick(index)} // Usa handleCardClick
+                        >
                             <span>{po.titulo}</span>
                         </div>
                     ))}
                 </div>
 
                 <div className="contenedor-infotarjetas">
-                    {infoparrafos.map((info, index) => (
-                        <div className={`info-tarjeta ${seleccardpoIndex === index ? "selecc" : ""}`} key={index}>
-                            <h2>{info.titulo}</h2>
 
-                            {info.indicadores.map((indicador, indIndex) => (
-                                <li key={indIndex} className="indicador">{indicador}</li>
-                            ))}
+                    {currentPOData ? (
+                        <>
+                            {/* Información general del PO */}
+                            <div className="info-po">
+                                <h2>{currentPOData.titulo}</h2>
+                                {currentPOData.indicadores && currentPOData.indicadores.length > 0 && (
+                                    <>
+                                        <h3>Indicadores:</h3>
+                                        <ul>
+                                            {currentPOData.indicadores.map((indicador, indIndex) => (
+                                                <li key={indIndex} className="indicador">{indicador}</li>
+                                            ))}
+                                        </ul>
+                                    </>
+                                )}
 
-                            {info.contenido.map((contenido, contIndex) => (
-                                <div key={contIndex} className="seccion-subtema-parrafo">
-                                    <h3>{contenido.subtema}</h3>
-                                    <p>{contenido.parrafo}</p>
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-
-
-                    <div>
-                        <h1>Directrices Gerenciales</h1>
-                    </div>
-
-                    <div className="contenedor-directrices">
-                        {/* Tabla de Entradas y Salidas */}
-                        <div className="tabla-entradas-salidas-container">
-                            <h3 className="titulo-tabla">P01 Definir un Plan Estratégico de TI.</h3>
-                            <div className="table-wrapper"> {/* Un wrapper para overflow si la tabla es grande */}
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th className="header-desde" colSpan="2">Desde</th>
-                                            <th className="header-salidas" colSpan="2">Salidas</th>
-                                            <th className="header-hacia" colSpan="4">Hacia</th> {/* Ajusta el colSpan según el número de columnas reales */}
-                                        </tr>
-                                        <tr>
-                                            <th>Entradas</th>
-                                            <th></th> {/* Columna vacía para la segunda parte de "Desde" si es necesario */}
-                                            <th></th> {/* Columna vacía para la segunda parte de "Salidas" */}
-                                            <th></th> {/* Columna vacía para la segunda parte de "Salidas" */}
-                                            <th></th> {/* Columna vacía para la segunda parte de "Hacia" */}
-                                            <th></th> {/* Columna vacía para la segunda parte de "Hacia" */}
-                                            <th></th> {/* Columna vacía para la segunda parte de "Hacia" */}
-                                            <th></th> {/* Columna vacía para la segunda parte de "Hacia" */}
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {/* Fila de "Desde" y "Entradas" */}
-                                        <tr>
-                                            <td>P05</td>
-                                            <td>Reportes de costo / beneficio</td>
-                                            <td>Plan estratégico de TI</td>
-                                            <td>PO2..PO6</td>
-                                            <td>PO8</td>
-                                            <td>PO9</td>
-                                            <td>AI1</td>
-                                            <td>DS1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>P09</td>
-                                            <td>Evaluación de riesgo</td>
-                                            <td>Plan táctico de TI</td>
-                                            <td>PO2..PO6</td>
-                                            <td>PO9</td>
-                                            <td>AI1</td>
-                                            <td>DS1</td>
-                                        </tr>
-                                        {/* ... (añade el resto de filas de "Desde" y "Entradas" aquí) */}
-                                        <tr>
-                                            <td>*</td>
-                                            <td>Estrategia y prioridades del negocio</td>
-                                            <td>Estrategia de contratación externa de TI</td>
-                                            <td>DS2</td>
-                                            <td></td><td></td><td></td><td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>ME1</td>
-                                            <td>Entradas a desempeño de planeación de TI</td>
-                                            <td>Estrategia de adquisición de TI</td>
-                                            <td>AI5</td>
-                                            <td></td><td></td><td></td><td></td>
-                                        </tr>
-                                        {/* ... (continúa con las filas que tienen solo una columna de "Salidas") */}
-                                    </tbody>
-                                </table>
-                                <p className="nota-tabla">* Entradas provenientes de fuentes externas a COBIT</p>
+                                {currentPOData.contenido && currentPOData.contenido.length > 0 && (
+                                    <div className="secciones-contenido">
+                                        {currentPOData.contenido.map((contenido, contIndex) => (
+                                            <div key={contIndex} className="seccion-subtema-parrafo">
+                                                <h3>{contenido.subtema}</h3>
+                                                <p>{contenido.parrafo}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
-                        </div>
 
-                        {/* Matriz RACI */}
-                        <div className="matriz-raci-container">
-                            <h3 className="titulo-matriz">Matriz RACI</h3>
-                            <p className="subtitulo-matriz">Una Matriz RACI identifica quien es Responsable, quien debe rendir cuentas (A), quien debe ser Consultado y/o Informado</p>
 
-                            <div className="table-raci-wrapper">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th rowSpan="2" className="corner-cell"></th> {/* Celda superior izquierda vacía */}
-                                            <th colSpan="8" className="funciones-header">Funciones</th> {/* "Funciones" abarca las columnas de abajo */}
-                                        </tr>
-                                        <tr>
-                                            {/* Aquí irán los th para cada función con la transformación diagonal */}
-                                            <th className="diagonal-header"><span>CEO</span></th>
-                                            <th className="diagonal-header"><span>CIO</span></th>
-                                            <th className="diagonal-header"><span>Ejecutivo del Negocio</span></th>
-                                            <th className="diagonal-header"><span>Dueño de Proceso del Negocio</span></th>
-                                            <th className="diagonal-header"><span>Jefe de Operaciones</span></th>
-                                            <th className="diagonal-header"><span>Arquitecto en Jefe</span></th>
-                                            <th className="diagonal-header"><span>Jefe de Desarrollo</span></th>
-                                            <th className="diagonal-header"><span>PMO</span></th>
-                                            <th className="diagonal-header"><span>Cumplimiento, Auditoría, Riesgo y Seguridad</span></th> {/* Esta es la más larga */}
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th className="actividades-header">Actividades</th>
-                                            {/* Celda vacía en la imagen después de Actividades */}
-                                        </tr>
-                                        {/* Filas de Actividades */}
-                                        <tr>
-                                            <td>Relacionar las metas del negocio con las de TI</td>
-                                            <td>C</td>
-                                            <td>I</td>
-                                            <td>A/R</td>
-                                            <td>R</td>
-                                            <td>C</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Identificar dependencias intrínsecas y desempeño actual</td>
-                                            <td>C</td>
-                                            <td>C</td>
-                                            <td>R</td>
-                                            <td>A/C</td>
-                                            <td>C</td>
-                                            <td>C</td>
-                                            <td>C</td>
-                                            <td>C</td>
-                                            <td>C</td>
-                                        </tr>
-                                        {/* ... (añade el resto de filas de Actividades aquí) */}
-                                        <tr>
-                                            <td>Analizar portafolios de programas y administrar portafolios de servicios y proyectos</td>
-                                            <td>C</td>
-                                            <td>I</td>
-                                            <td>I</td>
-                                            <td>A</td>
-                                            <td>R</td>
-                                            <td>R</td>
-                                            <td>C</td>
-                                            <td>R</td>
-                                            <td>C</td>
-                                            <td>I</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div className="contenedor-directrices">
+                                <h1>Directrices Gerenciales</h1>
+
+
+                                {currentPOData.tablas && currentPOData.tablas.map((tabla, indexTabla) => (
+                                    <div key={indexTabla} className="tabla-dinamica-wrapper"> {/* Nuevo wrapper para cada tabla */}
+                                        {tabla.titulo && <h3 className={tabla.tipo === "raci" ? "titulo-matriz" : "titulo-tabla"}>{tabla.titulo}</h3>}
+                                        {tabla.subtitulo && <p className="subtitulo-matriz">{tabla.subtitulo}</p>}
+
+                                        {/* Renderizar Tabla de Entradas y Salidas */}
+                                        {tabla.tipo === "entradasSalidas" && (
+                                            <div className="table-wrapper">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            {tabla.headers && Object.keys(tabla.headers).map((key, hIdx) => (
+                                                                <th
+                                                                    key={hIdx}
+                                                                    colSpan={tabla.headers[key].colSpan}
+                                                                    className={tabla.headers[key].className}
+                                                                >
+                                                                    {tabla.headers[key].text}
+                                                                </th>
+                                                            ))}
+                                                        </tr>
+                                                        {tabla.subHeaders && tabla.subHeaders.length > 0 && (
+                                                            <tr>
+                                                                {tabla.subHeaders.map((subHeader, shIdx) => (
+                                                                    <th key={shIdx}>{subHeader}</th>
+                                                                ))}
+                                                            </tr>
+                                                        )}
+                                                    </thead>
+                                                    <tbody>
+                                                        {tabla.data.map((fila, filaIdx) => (
+                                                            <tr key={filaIdx}>
+                                                                <td>{fila.desde}</td>
+                                                                <td>{fila.entradas}</td>
+                                                                <td>{fila.salidas}</td>
+                                                                {/* Renderizar las columnas de 'hacia' individualmente */}
+                                                                {Array.isArray(fila.hacia) ?
+                                                                    fila.hacia.map((item, itemIdx) => <td key={itemIdx}>{item}</td>) :
+                                                                    <td>{fila.hacia}</td> // Si no es un array (por ejemplo, un solo string)
+                                                                }
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                                {tabla.nota && <p className="nota-tabla">{tabla.nota}</p>}
+                                            </div>
+                                        )}
+
+                                        {/* Renderizar Matriz RACI */}
+                                        {tabla.tipo === "raci" && (
+                                            <div className="table-raci-wrapper">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th rowSpan="2" className="corner-cell">Actividades</th> {/* Puse "Actividades" aquí para que aparezca en la esquina */}
+                                                            <th colSpan={tabla.headersPersonas.length} className="funciones-header">Funciones</th>
+                                                        </tr>
+                                                        <tr>
+                                                            {tabla.headersPersonas.map((persona, pIdx) => (
+                                                                <th key={pIdx} className="diagonal-header"><span>{persona}</span></th>
+                                                            ))}
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {/* No necesitas esta fila si "Actividades" ya está en corner-cell
+                                                        <tr>
+                                                            <th className="actividades-header">Actividades</th>
+                                                        </tr>
+                                                        */}
+                                                        {tabla.data.map((fila, filaIdx) => (
+                                                            <tr key={filaIdx}>
+                                                                <td>{fila.actividad}</td>
+                                                                {fila.raci.map((valRaci, valIdx) => (
+                                                                    <td key={valIdx}>{valRaci}</td>
+                                                                ))}
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
                             </div>
-                        </div>
-                    </div>
+                        </>
+                    ) : (
+                        <p className="mensaje-seleccion">Selecciona una tarjeta PO para ver su información detallada.</p>
+                    )}
                 </div>
-
-
-
-
             </div>
         </>
     );
-
-
 }
 
 export default Part4;

@@ -9,7 +9,7 @@
 .contenedor-tarjetaspo {
     border: 1px solid red;
     width: 99dvw;
-    height: 30dvh;
+    height: 25dvh;
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -19,10 +19,11 @@
 .contenedor-infotarjetas {
     border: 1px solid red;
     width: 99dvw;
-    height: 68dvh;
+    height: 73dvh;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+     background-color: #f8f9fa;
 
 }
 
