@@ -5,27 +5,16 @@ import '../styles/postyles.css';
 import '../styles/tablas.css';
 import infoparrafos from '../pages/poData.js';
 
-import MetasyMetricas from '../components/metasymetricas.jsx';
-
 
 
 function Part4() {
 
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
-    const [isClientogramaModalOpen, setIsClientogramaModalOpen] = useState(false);
 
     const handleCardClick = (index) => {
         setSelectedCardIndex(index);
     }
 
-      // Funciones para abrir y cerrar el modal
-    const openClientogramaModal = () => {
-        setIsClientogramaModalOpen(true);
-    };
-
-    const closeClientogramaModal = () => {
-        setIsClientogramaModalOpen(false);
-    };
 
     // Obtener los datos del PO actualmente seleccionado
     const currentPOData = selectedCardIndex !== null ? infoparrafos[selectedCardIndex] : null;
@@ -175,13 +164,7 @@ function Part4() {
 
                     )}
 
-                    {isClientogramaModalOpen && (
-                <MetasyMetricas
-                    isOpen={isClientogramaModalOpen}
-                    onClose={closeClientogramaModal}
-                    imageSrc="/images/image_b942c6.png" // Asegúrate de que esta sea la ruta correcta a tu imagen
-                />
-            )}
+            
                 </div>
             </div>
         </>

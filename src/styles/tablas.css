@@ -10,6 +10,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
+    justify-content: center;
+    align-items: center;
     /* Espacio alrededor del contenedor principal */
 }
 
@@ -32,8 +34,10 @@
 /* Estilos para todas las tablas */
 .table-wrapper,
 .table-raci-wrapper {
-    overflow-x: auto; /* Permite scroll horizontal */
-    width: 100%; /* Ocupa todo el ancho disponible del padre */
+    overflow-x: auto;
+    /* Permite scroll horizontal */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del padre */
 }
 
 /* Resto de estilos generales de tabla si los tienes */
@@ -44,9 +48,11 @@ table {
     background-color: white;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #dee2e6;
-    padding: 8px 12px; /* Padding general, pero los específicos de arriba sobrescribirán */
+    padding: 8px 12px;
+    /* Padding general, pero los específicos de arriba sobrescribirán */
     vertical-align: middle;
 }
 
@@ -72,86 +78,101 @@ tbody tr:hover {
     text-align: right;
 }
 
-.tabla-entradas-salidas-container{
-    background-color: #f8f9fa; /* Fondo suave */
+.tabla-entradas-salidas-container {
+    background-color: #f8f9fa;
+    /* Fondo suave */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 2rem;
 }
 
-/* --- Estilos Específicos para la Tabla de Entradas/Salidas --- */
-.tabla-entradas-salidas-container table th.header-desde {
-    background-color: #cfe2ff;
+
+.header-entradas{
+    background-color: #D4EDDA;
 }
 
-/* Azul más claro */
-.tabla-entradas-salidas-container table th.header-salidas {
-    background-color: #d1e7dd;
+.header-salidas{
+    background-color: #FFF3CD;
 }
-
-/* Verde claro */
-.tabla-entradas-salidas-container table th.header-hacia {
-    background-color: #ffeeba;
+.header-hacia{
+    background-color: #CFE2FF;
 }
 
 /* Amarillo claro */
 
 /* --- Estilos Específicos para la Matriz RACI --- */
 .matriz-raci-container table {
-    border-collapse: collapse; /* Mantenemos colapsado para bordes limpios */
-    width: 100%; /* Permite que la tabla intente ocupar el ancho disponible */
-    /* Si la tabla es muy ancha, el .table-raci-wrapper con overflow-x: auto lo manejará */
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .matriz-raci-container th.corner-cell {
-    background-color: #e9ecef;
     border-bottom: 1px solid #dee2e6;
-    height: 120px; /* Mantener la altura para alineación con los nombres */
-    width: 250px; /* Ajusta este ancho. Es el ancho de la columna de Actividades. */
-    min-width: 250px; /* Asegura que no se haga más pequeña */
-    max-width: 350px; /* Opcional: Establece un ancho máximo si quieres que el texto se envuelva */
-    padding: 10px 20px 10px 20px; /* Padding para la celda */
+    height: 120px;
+    width: 250px;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 10px 20px 10px 20px;
     text-align: left;
-    vertical-align: bottom; /* Alinea "Actividades" en la parte inferior de su celda */
+    vertical-align: bottom;
     font-weight: bold;
     font-size: 1.1em;
     color: #343a40;
-    overflow: hidden; /* Recorta si el texto es demasiado largo para este ancho */
+    overflow: hidden;
     box-sizing: border-box;
+}
+.corner-cell{
+    background-color: #FDFD96;
+    /* Color de fondo azul claro */
 }
 
 .matriz-raci-container th.funciones-header {
-     background-color: #e9ecef;
+    
     text-align: center;
-    vertical-align: bottom; /* Alinea "Funciones" en la parte inferior de su celda */
-    padding-bottom: 10px; /* Espacio debajo de "Funciones" */
+    vertical-align: bottom;
+    /* Alinea "Funciones" en la parte inferior de su celda */
+    padding-bottom: 10px;
+    /* Espacio debajo de "Funciones" */
+}
+.funciones-header{
+    background-color: #CFE2FF;
 }
 
 /* La magia de las celdas diagonales para las funciones (Nombres) */
 .diagonal-header {
-    height: 120px; /* Altura suficiente para el texto rotado */
-    width: 180px; /* Ancho de cada columna de nombre. Esto es CRÍTICO para el espaciado. Ajusta según necesidad. */
-    min-width: 80px; /* Asegura que no se contraigan */
-    padding: 0; /* Sin padding en el TH, el SPAN lo maneja */
+    height: 120px;
+    /* Altura suficiente para el texto rotado */
+    width: 180px;
+    /* Ancho de cada columna de nombre. Esto es CRÍTICO para el espaciado. Ajusta según necesidad. */
+    min-width: 80px;
+    /* Asegura que no se contraigan */
+    padding: 0;
+    /* Sin padding en el TH, el SPAN lo maneja */
     border: 1px solid #dee2e6;
     position: relative;
-    overflow: hidden; /* Oculta el texto que se desborda */
-    background-color: #e9ecef;
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    background-color: #CFE2FF;
     box-sizing: border-box;
 }
 
 .diagonal-header span {
-    display: flex; /* El span debe ser un bloque para rotar */
-     /* IMPIDE QUE EL TEXTO SE DIVIDA EN VARIAS LÍNEAS */
+    display: flex;
+    /* El span debe ser un bloque para rotar */
+    /* IMPIDE QUE EL TEXTO SE DIVIDA EN VARIAS LÍNEAS */
     font-weight: bold;
-    color: #343a40; /* Color del texto */
-    font-size: 0.85em; /* Puedes reducir el tamaño de la fuente para textos más largos */
+    color: #343a40;
+    /* Color del texto */
+    font-size: 0.85em;
+    /* Puedes reducir el tamaño de la fuente para textos más largos */
 
     /* Posicionamiento del texto rotado */
     position: absolute;
-    bottom: 0; /* Empieza desde la parte inferior de la celda TH */
-    left: 0; /* Empieza desde la parte izquierda de la celda TH */
-    
+    bottom: 0;
+    /* Empieza desde la parte inferior de la celda TH */
+    left: 0;
+    /* Empieza desde la parte izquierda de la celda TH */
+
     /* Origen de la transformación: esquina inferior izquierda del SPAN */
     transform-origin: 0% 100%;
 
@@ -160,37 +181,41 @@ tbody tr:hover {
     /* Rotate: -45deg rota en sentido anti-horario */
     /* translateX: mueve horizontalmente después de rotar */
     /* translateY: mueve verticalmente después de rotar */
-    transform: rotate(-45deg) translateX(5px) translateY(32px); 
+    transform: rotate(-45deg) translateX(5px) translateY(32px);
 
     /* Añade padding dentro del span para separar el texto rotado de los bordes del TH */
-    padding-left: 25px; /* Espacio a la izquierda del texto rotado */
-    padding-bottom: 5px; /* Espacio debajo del texto rotado */
-    padding-right: 5px; /* Pequeño padding a la derecha también */
+    padding-left: 25px;
+    /* Espacio a la izquierda del texto rotado */
+    padding-bottom: 5px;
+    /* Espacio debajo del texto rotado */
+    padding-right: 5px;
+    /* Pequeño padding a la derecha también */
 }
 
 /* Estilos para las celdas de datos de la Matriz RACI (C, I, A/R, R, etc.) */
 .matriz-raci-container tbody td {
-     text-align: center;
+    text-align: center;
     font-weight: bold;
     font-size: 0.95em;
-    color: #007bff; /* Color azul como en tu imagen */
-    width: 60px; /* IMPORTANTE: Mismo ancho que .diagonal-header para que las columnas coincidan */
-    min-width: 60px; /* Asegura que no se contraigan */
+    color: #007bff;
+    /* Color azul como en tu imagen */
+    width: 60px;
+    /* IMPORTANTE: Mismo ancho que .diagonal-header para que las columnas coincidan */
+    min-width: 60px;
+    /* Asegura que no se contraigan */
     box-sizing: border-box;
 }
 
 /* Estilo para las actividades en el tbody */
 .matriz-raci-container tbody td:first-child {
-     text-align: left;
+    text-align: left;
     color: #343a40;
     font-weight: normal;
-    width: 250px; /* IMPORTANTE: Mismo ancho que .corner-cell para la alineación */
+    width: 250px;
+    /* IMPORTANTE: Mismo ancho que .corner-cell para la alineación */
     min-width: 250px;
-    padding: 8px 12px; /* Añade padding para el texto de la actividad */
+    padding: 8px 12px;
+    /* Añade padding para el texto de la actividad */
     box-sizing: border-box;
 }
 
-/* Si quieres que las letras RACI en el tbody sean azules como en la imagen,
-   ya lo tienes con color: #007bff; en .matriz-raci-container tbody td
-   Asegúrate de que tus h3 y otros textos largos no se corten.
-*/

@@ -1,5 +1,4 @@
 .contenedor-general {
-    border: 1px solid red;
     width: 99dvw;
     height: 98dvh;
     display: flex;
@@ -7,7 +6,6 @@
 }
 
 .contenedor-tarjetaspo {
-    border: 1px solid red;
     width: 99dvw;
     height: 25dvh;
     display: flex;
@@ -17,15 +15,94 @@
 }
 
 .contenedor-infotarjetas {
-    border: 1px solid red;
     width: 99dvw;
     height: 73dvh;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-     background-color: #f8f9fa;
 
 }
+
+ /* Estilos generales para el contenedor principal */
+    .info-po {
+        font-family: Arial, sans-serif; 
+        color: #333; 
+        padding: 20px;
+        background-color: #f9f9f9; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        width: 800px; 
+        max-width: 800px; 
+        margin: 20px auto; 
+    }
+
+    /* Estilo para el título principal */
+    .info-po h2 {
+        color: #0056b3; 
+        font-size: 2em; 
+        margin-bottom: 25px;
+        text-align: center; 
+        border-bottom: 2px solid #eee; 
+        padding-bottom: 15px;
+    }
+
+    /* Estilo para los subtítulos (Indicadores y Subtemas) */
+    .info-po h3 {
+        color: #0056b3; 
+        font-size: 1.5em; 
+        margin-top: 30px; 
+        margin-bottom: 15px; 
+        border-bottom: 1px solid #eee; 
+        padding-bottom: 8px;
+    }
+
+    /* Estilo para la lista de indicadores */
+    .info-po ul {
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Estilo para cada elemento de indicador */
+    .info-po .indicador {
+        background-color: #e0f2f7; 
+        border-left: 5px solid #007bff; 
+        padding: 10px 15px;
+        margin-bottom: 10px; 
+        border-radius: 4px; 
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
+
+    /* Estilos para las secciones de contenido (subtema y párrafo) */
+    .secciones-contenido {
+        margin-top: 30px;
+    }
+
+    .seccion-subtema-parrafo {
+        background-color: #ffffff; 
+        padding: 20px;
+        margin-bottom: 20px; 
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
+        border: 1px solid #ddd; 
+    }
+
+    .seccion-subtema-parrafo h3 {
+        color: #0056b3; /* Color del subtema */
+        font-size: 1.4em;
+        margin-top: 0; 
+        margin-bottom: 10px;
+        border-bottom: none; 
+        padding-bottom: 0;
+    }
+
+    .seccion-subtema-parrafo p {
+        font-size: 1em;
+        line-height: 1.6; 
+        color: #555; 
+        margin-bottom: 0; 
+    }
 
 .card-PO {
     background-color: white;
@@ -61,4 +138,30 @@
     /* Mantiene el efecto del seleccionado */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border: #007bff;
+}
+
+.home-button {
+
+    margin: 30dvh;
+    border: 1px solid red;
+    width: auto;
+    background-color: #0061A0;
+    /* Color principal de tu paleta */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 40, 86, 0.2);
+}
+
+.home-button:hover {
+    background-color: #00457A;
+    /* Un tono más oscuro al pasar el ratón */
+    transform: translateY(-2px);
+    /* Un ligero levantamiento al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 40, 86, 0.3);
 }

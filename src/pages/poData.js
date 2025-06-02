@@ -15,6 +15,8 @@ const infoparrafos = [
                 parrafo: "Asegurar que el Plan Estratégico de TI este alineado a los objetivos de la universidad, tomando en cuenta el estado actual de los laboratorios y las necesidades de los usuarios de tal modo que se pueda establecer prioridades que cumplan las metas a mediano y largo plazo"
             },
         ],
+
+        // Tablas que contienen la informacion de los PO
         tablas: [
             {
                 titulo: "Tabla de Entradas y Salidas",
@@ -52,7 +54,7 @@ const infoparrafos = [
                         hacia: ["AI5", "", "", "", ""]
                     }
                 ],
-                nota: "* Entradas provenientes de fuentes externas a COBIT"
+                
             },
             {
                 titulo: "Matriz RACI",
