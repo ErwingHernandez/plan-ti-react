@@ -5,15 +5,27 @@ import '../styles/postyles.css';
 import '../styles/tablas.css';
 import infoparrafos from '../pages/poData.js';
 
+import MetasyMetricas from '../components/metasymetricas.jsx';
+
 
 
 function Part4() {
-    // Renombrar a 'selectedCardIndex' para consistencia, o asegúrate de usar 'seleccardpoIndex' en todas partes
-    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
-    const handleCardClick = (index) => { // Renombré para ser consistente con el ejemplo anterior, pero puedes mantener cardpoClick
+    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
+    const [isClientogramaModalOpen, setIsClientogramaModalOpen] = useState(false);
+
+    const handleCardClick = (index) => {
         setSelectedCardIndex(index);
     }
+
+      // Funciones para abrir y cerrar el modal
+    const openClientogramaModal = () => {
+        setIsClientogramaModalOpen(true);
+    };
+
+    const closeClientogramaModal = () => {
+        setIsClientogramaModalOpen(false);
+    };
 
     // Obtener los datos del PO actualmente seleccionado
     const currentPOData = selectedCardIndex !== null ? infoparrafos[selectedCardIndex] : null;
@@ -134,11 +146,7 @@ function Part4() {
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        {/* No necesitas esta fila si "Actividades" ya está en corner-cell
-                                                        <tr>
-                                                            <th className="actividades-header">Actividades</th>
-                                                        </tr>
-                                                        */}
+                                                        
                                                         {tabla.data.map((fila, filaIdx) => (
                                                             <tr key={filaIdx}>
                                                                 <td>{fila.actividad}</td>
@@ -156,8 +164,24 @@ function Part4() {
                             </div>
                         </>
                     ) : (
-                        <p className="mensaje-seleccion">Selecciona una tarjeta PO para ver su información detallada.</p>
+                        <>
+                            <div className="home-button-container">
+                                <button className="home-button">
+                                    Selecciona una tarjeta PO para ver su información detallada.
+                                </button>
+                            </div>
+                        </>
+
+
                     )}
+
+                    {isClientogramaModalOpen && (
+                <MetasyMetricas
+                    isOpen={isClientogramaModalOpen}
+                    onClose={closeClientogramaModal}
+                    imageSrc="/images/image_b942c6.png" // Asegúrate de que esta sea la ruta correcta a tu imagen
+                />
+            )}
                 </div>
             </div>
         </>
