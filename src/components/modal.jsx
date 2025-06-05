@@ -2,6 +2,9 @@ import React from 'react';
 import '../styles/Modal.css'; // Crearemos este archivo CSS en el siguiente paso
 
 const Modal = ({ data, onClose }) => {
+    if (!data) {
+        return null; // Si no hay datos, no renderizamos nada
+    }
     return (
         <div className="modal-overlay" onClick={onClose}>
 
@@ -16,8 +19,8 @@ const Modal = ({ data, onClose }) => {
                         <div className="modal-section modal-metas">
                             <h3>TI</h3>
                             <ul>
-                                {data.metas.map((meta, index) => (
-                                    <li key={index}>{meta}</li>
+                                {data.metas.map((item, index) => (
+                                    <li key={index}>{item}</li>
                                 ))}
                             </ul>
                         </div>
@@ -32,10 +35,7 @@ const Modal = ({ data, onClose }) => {
                         </div>
                     </div>
 
-                    <div className="modal-arrow-container">
-                        <span className="modal-arrow horizontal">→</span>
-                        <span className="modal-arrow diagonales">↓</span>
-                    </div>
+                  
 
                     <div className="modal-column">
                         <div className="modal-section modal-procesos">
@@ -56,11 +56,7 @@ const Modal = ({ data, onClose }) => {
                         </div>
                     </div>
 
-                    <div className="modal-arrow-container">
-                        <span className="modal-arrow horizontal">→</span>
-                        <span className="modal-arrow abajo">↓</span>
-                        <span className="modal-arrow abajo">↓</span>
-                    </div>
+                    
 
                     <div className="modal-column">
                         <div className="modal-section modal-actividades">

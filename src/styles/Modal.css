@@ -15,7 +15,7 @@
 
 /* Modal Content */
 .modal-content {
-    background: white;
+    background-color: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -63,7 +63,7 @@
 .modal-column {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     flex: 1;
     /* Permite que las columnas ocupen el espacio disponible */
     min-width: 280px;
@@ -90,6 +90,13 @@
     /* Agrega scroll si el contenido es demasiado largo */
     box-sizing: border-box;
     /* Muy importante para que padding y border se incluyan en el width/height */
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.modal-section:hover{
+     transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
 }
 
 .modal-section h3 {
@@ -110,13 +117,15 @@
 }
 
 .modal-section li {
-    margin-bottom: 8px;
-    line-height: 1.4;
+     margin-bottom: 10px; /* Slightly more space between items */
+    line-height: 1.5; /* Improve readability */
+    padding-left: 5px; /* Small indentation */
 }
 
 
 
 .tituloslateral1 {
+     font-weight: bold; 
     font-size: 2rem;
     color: #007bff;
     
@@ -124,11 +133,12 @@
     position: absolute;
     transform-origin: 0% 100%;
     transform: rotate(-90deg);
-    margin-left: -83%;
+    margin-left: -75%;
     margin-top: 18%;
 }
 
 .tituloslateral2 {
+    font-weight: bold; 
     font-size: 2rem;
     color: #007bff;
     
@@ -136,7 +146,7 @@
     position: absolute;
     transform-origin: 0% 100%;
     transform: rotate(-90deg);
-    margin-left: -81%;
+    margin-left: -72%;
     margin-top: 52%;
 }
 

@@ -16,6 +16,41 @@ const infoparrafos = [
             },
         ],
 
+        metas: [
+            "Responder a los requerimientos del negocio en alineación con la estrategia del negocio",
+            "Responder a los requerimientos de gobierno alineados con la dirección del consejo directivo"
+        ],
+        procesos: [
+            "Definir cómo los requerimientos de negocio se traducen en ofertas de servicio",
+            "Definir la estrategia para la entrega de las ofertas de servicio",
+            "Contribuir a la gestión del portafolio de inversiones de negocio de TI",
+            "Establecer claridad del impacto de los riesgos en los objetivos y en los recursos",
+            "Proporcionar transparencia y entendimiento de costos, beneficios, estrategias, políticas y niveles de servicio de TI"
+        ],
+        actividades: [
+            "Involucrarse con la alta gerencia y la gerencia del negocio para alinear los planes estratégicos de TI con las necesidades del negocio actuales y futuras",
+            "Entender las capacidades actuales de TI",
+            "Traducir el plan estratégico de TI a planes tácticos",
+            "Brindar un esquema de prioridades para los objetivos del negocio que cuantifiquen los requerimientos del negocio"
+        ],
+        metricas_ti: [
+            "Grado de aprobación de los Dueños del negocio de los planes estratégicos/tácticos de TI",
+            "Grado de cumplimiento de requerimientos de gobierno y de negocio",
+            "Nivel de satisfacción del negocio con el estado actual del portafolio de proyectos y aplicaciones (número, alcance, etc.)"
+        ],
+        metricas_procesos: [
+            "% de objetivos de TI en el plan estratégico de TI que dan soporte al plan estratégico del negocio",
+            "% de iniciativas de TI en el plan táctico de TI que da soporte al plan táctico del negocio",
+            "% de proyectos de TI en el portafolio de proyectos de TI que se pueden rastrear de forma directa al plan táctico de TI"
+        ],
+        metricas_actividades: [
+            "Retrasos existentes entre las actualizaciones del plan estratégico/táctico del negocio y las actualizaciones del plan estratégico/táctico de TI",
+            "% de reuniones de planeación estratégica/táctica de TI donde los representantes del negocio participaron de forma activa",
+            "Retraso entre actualizaciones de planes estratégicos de TI y actualizaciones de planes tácticos de TI",
+            "% de planes tácticos de TI con el contenido/estructura predefinida de esos planes",
+            "% de iniciativas/proyectos TI dirigidos por Dueños del negocio"
+        ],
+
         // Tablas que contienen la informacion de los PO
         tablas: [
             {
@@ -39,7 +74,7 @@ const infoparrafos = [
                         desde: "P09",
                         entradas: "Evaluación de riesgo",
                         salidas: "Plan táctico de TI",
-                        hacia: ["PO2..PO6", "PO9", "AI1", "DS1",""]
+                        hacia: ["PO2..PO6", "PO9", "AI1", "DS1", ""]
                     },
                     {
                         desde: "*",
@@ -54,7 +89,7 @@ const infoparrafos = [
                         hacia: ["AI5", "", "", "", ""]
                     }
                 ],
-                
+
             },
             {
                 titulo: "Matriz RACI",
@@ -83,11 +118,87 @@ const infoparrafos = [
     },
     {
         titulo: "PO2",
-        indicadores: ["% de cumplimiento de objetivos", "Tiempo de implementación de proyectos"],
+        indicadores: [], 
         contenido: [
-            { subtema: "PO2.1 Gestión de Relaciones", parrafo: "Descripción de gestión de relaciones." },
+            {
+                subtema: "PO2.X Subtema 1 de PO2", 
+                parrafo: "Párrafo sobre el subtema 1 de PO2. Rellena con la descripción correspondiente."
+            },
+            
         ],
-        tablas: [] // Tablas específicas para PO2
+
+        metas: [
+            "Meta de PO2 - Requerimiento del negocio",
+            "Meta de PO2 - Requerimiento de gobierno",
+        ],
+        procesos: [
+            "Proceso de PO2 - Definir la oferta de servicio", 
+            "Proceso de PO2 - Estrategia de entrega",
+        ],
+        actividades: [
+            "Actividad de PO2 - Involucramiento con la gerencia",
+            "Actividad de PO2 - Entender capacidades de TI",
+        ],
+        metricas_ti: [
+            "Métrica TI de PO2 - Aprobación del negocio", 
+            "Métrica TI de PO2 - Cumplimiento de requerimientos",
+        ],
+        metricas_procesos: [
+            "Métrica de Procesos de PO2 - % de objetivos de TI",
+            "Métrica de Procesos de PO2 - % de iniciativas de TI",
+        ],
+        metricas_actividades: [
+            "Métrica de Actividades de PO2 - Retrasos en actualizaciones", 
+            "Métrica de Actividades de PO2 - % de reuniones con participación del negocio",
+        ],
+
+       
+        tablas: [
+            // Ejemplo de Tabla de Entradas y Salidas para PO2 (puedes copiar y modificar la de PO1)
+            
+            {
+                titulo: "Tabla de Entradas y Salidas de PO2",
+                tipo: "entradasSalidas",
+                headers: {
+                    col1: { text: "Desde", colSpan: 0, className: "header-entradas" },
+                    col2: { text: "Entradas", colSpan: 1, className: "header-entradas" },
+                    col3: { text: "Salidas", colSpan: 1, className: "header-salidas" },
+                    col4: { text: "Hacia", colSpan: 5, className: "header-hacia" }
+                },
+                subHeaders: ["", "", "", "", "", "", "", ""],
+                data: [
+                    {
+                        desde: "POX", 
+                        entradas: "Entrada específica de PO2",
+                        salidas: "Salida específica de PO2",
+                        hacia: ["POY", "POZ", "", "", ""] 
+                    },
+                    
+                ],
+            },
+            
+
+            // Ejemplo de Matriz RACI 
+            
+            {
+                titulo: "Matriz RACI de PO2",
+                tipo: "raci",
+                headersPersonas: [
+                   "Mishel Y. Izaguirre M.",
+                    "Judith A. Balladares",
+                    "Holman J. Bermudez S.",
+                    "Erwing A. Hernandez G."
+                ],
+                data: [
+                    { actividad: "Actividad 1 de PO2 para RACI", raci: ["R", "A", "C", "I"] },
+                    { actividad: "Actividad 2 de PO2 para RACI", raci: ["A", "R", "I", "C"] },
+                    
+                ],
+                subtitulo: "Una Matriz RACI identifica quien es Responsable, quien debe rendir cuentas (A), quien debe ser Consultado y/o Informado para PO2."
+            }
+            
+        ]
+
     }
 ];
 

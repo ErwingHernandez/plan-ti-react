@@ -176,12 +176,6 @@ function ObjetivosTi() {
                     ))}
                 </Swiper>
             </div>
-
-            <div className="home-button-container">
-                <button className="home-button" onClick={goToHomePage}>
-                    Ir a la Página Principal
-                </button>
-            </div>
         </>
 
     );
