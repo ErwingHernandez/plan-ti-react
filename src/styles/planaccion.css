@@ -121,7 +121,7 @@
 
 
 /*Modal*/
-.modal-overlay {
+.modal-overlayplanac {
     position: fixed;
     top: 0;
     left: 0;
@@ -135,7 +135,7 @@
     z-index: 1000;
 }
 
-.modal-content {
+.modal-contentplanac  {
     background: linear-gradient(135deg, #002060, #8A1538, #c29127);
     color: #1a1a1a;
     display: flex;
@@ -149,52 +149,52 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.modal-left {
+.modal-leftplanac  {
     flex: 1;
     padding-right: 20px;
 }
 
 
 
-.modal-left img {
+.modal-leftplanac  img {
     width: 100%;
     border-radius: 10px;
 }
 
 
-.modal-right {
+.modal-rightplanac  {
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.modal-scrollable {
+.modal-scrollableplanac  {
     overflow-y: auto;
     padding-right: 10px;
     max-height: 300px;
 }
 
-.modal-scrollable::-webkit-scrollbar {
+.modal-scrollableplanac ::-webkit-scrollbar {
     width: 8px;
 }
 
-.modal-scrollable::-webkit-scrollbar-thumb {
+.modal-scrollableplanac ::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 4px;
 }
 
-.modal-right h3 {
+.modal-rightplanac  h3 {
     color: #fffbfb;
 }
 
-.modal-right ul {
+.modal-rightplanac  ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.modal-right li {
+.modal-rightplanac  li {
     position: relative;
     padding-left: 1.8em;
     margin-bottom: 10px;
@@ -208,7 +208,7 @@
     transition: background-color 0.3s ease;
 }
 
-.modal-right li::before {
+.modal-rightplanac  li::before {
     content: "✔";
     /* Puedes cambiarlo por "•", "→", "★", etc. */
     position: absolute;
@@ -217,7 +217,7 @@
     font-size: 1em;
 }
 
-.close-button {
+.close-buttonplanac  {
     position: absolute;
     top: 8px;
     right: 12px;

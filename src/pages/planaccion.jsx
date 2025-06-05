@@ -126,14 +126,14 @@ function Planaccion() {
             </div>
 
             {modalVisible && contenidoActual && (
-                <div className="modal-overlay" onClick={cerrarModal}>
-                    <div className="modal-content" onClick={e => e.stopPropagation()}>
-                        <div className="modal-left">
+                <div className="modal-overlayplanac" onClick={cerrarModal}>
+                    <div className="modal-contentplanac" onClick={e => e.stopPropagation()}>
+                        <div className="modal-leftplanac ">
                             <img src={contenidoActual.img} alt="Perspectiva" />
                         </div>
-                        <div className="modal-right">
+                        <div className="modal-rightplanac">
                             <h3>Objetivos</h3>
-                            <div className="modal-scrollable">
+                            <div className="modal-scrollableplanac">
                                 <ul>
                                     {contenidoActual.objetivos.map((obj, index) => (
                                         <li key={index}>{obj}</li>
@@ -147,7 +147,7 @@ function Planaccion() {
                                 </ul>
                             </div>
                         </div>
-                        <button className="close-button" onClick={cerrarModal}>X</button>
+                        <button className="close-buttonplanac" onClick={cerrarModal}>X</button>
                     </div>
                 </div>
             )}

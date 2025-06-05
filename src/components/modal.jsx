@@ -6,17 +6,17 @@ const Modal = ({ data, onClose }) => {
         return null; // Si no hay datos, no renderizamos nada
     }
     return (
-        <div className="modal-overlay" onClick={onClose}>
+        <div className="modal-overlaypo" onClick={onClose}>
 
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-contentpo" onClick={(e) => e.stopPropagation()}>
 
-                <button className="modal-close-button" onClick={onClose}>X</button>
+                <button className="modal-close-buttonpo" onClick={onClose}>X</button>
 
-                <div className='tituloslateral1'>Metas</div>
-                <div className='tituloslateral2'>Metricas</div>
-                <div className="modal-sections-container">
-                    <div className="modal-column">
-                        <div className="modal-section modal-metas">
+                <div className='tituloslateral1po'>Metas</div>
+                <div className='tituloslateral2po'>Metricas</div>
+                <div className="modal-sections-containerpo">
+                    <div className="modal-columnpo">
+                        <div className="modal-sectionpo modal-metaspo">
                             <h3>TI</h3>
                             <ul>
                                 {data.metas.map((item, index) => (
@@ -24,7 +24,7 @@ const Modal = ({ data, onClose }) => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="modal-section modal-metricas-ti">
+                        <div className="modal-sectionpo modal-metricas-tipo">
                             {/*Métricas */}
 
                             <ul>
@@ -37,8 +37,8 @@ const Modal = ({ data, onClose }) => {
 
                   
 
-                    <div className="modal-column">
-                        <div className="modal-section modal-procesos">
+                    <div className="modal-columnpo">
+                        <div className="modal-sectionpo modal-procesospo">
                             <h3>Procesos</h3>
                             <ul>
                                 {data.procesos.map((proceso, index) => (
@@ -46,7 +46,7 @@ const Modal = ({ data, onClose }) => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="modal-section modal-metricas-procesos">
+                        <div className="modal-sectionpo modal-metricas-procesospo">
                             {/*Métricas */}
                             <ul>
                                 {data.metricas_procesos.map((metrica, index) => (
@@ -58,8 +58,8 @@ const Modal = ({ data, onClose }) => {
 
                     
 
-                    <div className="modal-column">
-                        <div className="modal-section modal-actividades">
+                    <div className="modal-columnpo">
+                        <div className="modal-sectionpo modal-actividadespo">
                             <h3>Actividades</h3>
                             <ul>
                                 {data.actividades.map((actividad, index) => (
@@ -67,7 +67,7 @@ const Modal = ({ data, onClose }) => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="modal-section modal-metricas-actividades">
+                        <div className="modal-sectionpo modal-metricas-actividadespo">
                             {/*Métricas */}
                             <ul>
                                 {data.metricas_actividades.map((metrica, index) => (
