@@ -15,13 +15,13 @@ function Anexos() {
 
       <section className="sectionbotonesanexos">
 
-        <div className="botonanexos" onClick={() => setSeccionActiva("rubricas")}>
+        <div className={`botonanexos ${seccionActiva === "rubricas" ? "activo" : ""}`} onClick={() => setSeccionActiva("rubricas")}>
           Rubricas
         </div>
-        <div className="botonanexos" onClick={() => setSeccionActiva("imagenes")}>
+        <div className={`botonanexos ${seccionActiva === "imagenes" ? "activo" : ""}`} onClick={() => setSeccionActiva("imagenes")}>
           Imagenes
         </div>
-        <div className="botonanexos" onClick={() => setSeccionActiva("factibilidad")}>
+        <div  className={`botonanexos ${seccionActiva === "factibilidad" ? "activo" : ""}`} onClick={() => setSeccionActiva("factibilidad")}>
           Estudio de factibilidad
         </div>
 
