@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Modal.css'; // Crearemos este archivo CSS en el siguiente paso
+import '../styles/Modal.css'; 
 
 const Modal = ({ data, onClose }) => {
     if (!data) {

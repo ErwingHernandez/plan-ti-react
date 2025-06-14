@@ -86,7 +86,7 @@ function Home() {
                             <span>Objetivos TI</span>
                         </div>
 
-                        <div className='card card-styled'>
+                        <div className='card card-styled'  onClick={() => handleCardClick("/anexos")}>
                             <FontAwesomeIcon icon={faPaperclip}  bounce  size="2x" />
                             <span>Anexos</span>
                         </div>

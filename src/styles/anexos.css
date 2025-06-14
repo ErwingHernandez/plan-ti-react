@@ -1,0 +1,126 @@
+.containeranexos {
+    display: flex;
+    width: 99dvw;
+    height: 98dvh;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.sectionbotonesanexos {
+    display: flex;
+    height: 21%;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    /* Opcional: desenfoque del fondo */
+}
+
+.botonanexos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 60%;
+    width: 25%;
+    text-wrap: wrap;
+
+}
+
+.botonanexos:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+.sectioncontenidoanexos {
+    width: 99dvw;
+    height: 98dvh;
+    overflow-y: auto;
+    scrollbar-color: #888 #222;
+}
+
+.sectioncontenidoanexos::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.sectioncontenidoanexos::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.sectioncontenidoanexos::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+.contenedorrubricas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulosrubricas {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.tablaencabezados th {
+    background-color: rgb(49, 121, 253);
+    color: white;
+}
+
+/**/
+.contenedorimagenes {
+    width: 90dvw;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriaimagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 1000px;
+}
+
+.imagenlaboratorio {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/**/
+
+.contenedorestudiodefactibilidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.titilosprincipales{
+    background-color: yellow;
+}
+
