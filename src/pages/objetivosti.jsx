@@ -20,10 +20,10 @@ function ObjetivosTi() {
             titulo: 'Definir políticas institucionales sobre el uso, mantenimiento y seguridad de la infraestructura tecnológica.',
             factores: 'Participación del personal técnico, Compromiso institucional en la formulación y aplicación de políticas.',
             estrategias: [
-                'Capacitar al 100% del personal técnico y académico que utiliza los laboratorios en las políticas institucionales durante el segundo trimestre de 2025.',
-                'Implementar un mecanismo digital para el seguimiento y evaluación del cumplimiento de las políticas al finalizar el segundo semestre de 2025.',
-                'Actualizar las políticas de manera anual en función de cambios tecnológicos, normativos o institucionales, comenzando en enero de 2026.',
-            ]
+                'Capacitar al 100% del personal técnico y académico que utiliza los laboratorios en las políticas institucionales.',
+                'Implementar un mecanismo digital para el seguimiento y evaluación del cumplimiento de las políticas.',
+                'Actualizar las políticas de manera anual en función de cambios tecnológicos, normativos o institucionales.',
+            ],
 
 
         },
@@ -38,8 +38,8 @@ function ObjetivosTi() {
         },
         {
             numero: 3,
-            titulo: 'Desarrollar e implementar un sistema automatizado para el control y monitoreo de los programas instalados en los laboratorios del pabellón 16 del SIUDT, que permita garantizar la integridad, legalidad y actualización del software.',
-            factores: 'Inventario de software inicial completo y actualizado del software por laboratorio, Plataforma de gestión centralizada con capacidad de monitoreo remoto, Formación técnica del personal encargado del mantenimiento y soporte.',
+            titulo: 'Implementar un sistema automatizado para el control y monitoreo de los programas instalados en los laboratorios del pabellón 16 del SIUDT, que permita garantizar la integridad, legalidad y actualización del software.',
+            factores: '•	Inventario de software inicial completo y actualizado del software por laboratorio., Plataforma de gestión centralizada con capacidad de monitoreo remoto, Formación técnica del personal encargado del mantenimiento y soporte.',
             estrategias: [
                 'Realizar un inventario digital detallado de los programas instalados en cada laboratorio.',
                 'Garantizar que el 100% del software instalado esté debidamente licenciado y documentado.',
@@ -81,7 +81,7 @@ function ObjetivosTi() {
         },
         {
             numero: 7,
-            titulo: 'Diseñar e implementar un módulo de gestión de incidencias técnicas en los laboratorios del pabellón 16 del SIUDT, que permita el reporte, seguimiento y resolución de problemas técnicos de forma ágil y centralizada.',
+            titulo: 'Diseñar e implementar un sistema de gestión de incidencias técnicas en los laboratorios del pabellón 16 del SIUDT, que permita el reporte, seguimiento y resolución de problemas técnicos de forma ágil y centralizada.',
             factores: 'Plataforma accesible para usuarios (estudiantes docentes técnicos)., Flujo de atención definido (registro diagnóstico resolución y cierre)., Personal técnico capacitado para el análisis y resolución de incidencias.',
             estrategias: [
                 'Desarrollar una interfaz web para la recepción de incidencias por laboratorio antes de finalizar el segundo trimestre de 2025.',
@@ -91,7 +91,7 @@ function ObjetivosTi() {
         },
         {
             numero: 8,
-            titulo: 'Implementar un módulo de bitácora digital para los laboratorios del pabellón 16 del SIUDT, destinado exclusivamente a los responsables y al Jefe del SIUDT, que permita registrar diariamente actividades realizadas, observaciones relevantes y estado general de los recursos.',
+            titulo: 'Implementar un sistema de bitácora digital para los laboratorios del pabellón 16 del SIUDT, destinado exclusivamente a los responsables y al Jefe del SIUDT, que permita registrar diariamente actividades realizadas, observaciones relevantes y estado general de los recursos.',
             factores: 'Uso sistemático por parte del personal responsable., Posibilidad de generar reportes históricos y por laboratorio.',
             estrategias: [
                 'Establecer campos predeterminados en la bitácora para registrar actividades diarias, observaciones técnicas y recomendaciones.',
@@ -110,7 +110,7 @@ function ObjetivosTi() {
         },
         {
             numero: 10,
-            titulo: 'Diseñar un módulo automatizado para la planificación y notificación del mantenimiento preventivo de equipos tecnológicos en los laboratorios del pabellón 16 del SIUDT.',
+            titulo: 'Diseñar un sistema automatizado para la planificación y notificación del mantenimiento preventivo de equipos tecnológicos en los laboratorios del pabellón 16 del SIUDT.',
             factores: 'Capacitación adecuada del personal técnico encargado del mantenimiento., Compromiso del equipo técnico para cumplir con los calendarios de mantenimiento.',
             estrategias: [
                 'Implementar un calendario digital con alertas automáticas para cada tipo de mantenimiento.',
