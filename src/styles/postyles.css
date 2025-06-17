@@ -3,7 +3,7 @@
     height: 98dvh;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .contenedor-tarjetaspo {
@@ -13,7 +13,7 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .contenedor-infotarjetas {
@@ -22,94 +22,110 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    
+
 
 }
 
- /* Estilos generales para el contenedor principal */
-    .info-po {
-        font-family: Arial, sans-serif; 
-        color: #333; 
-        padding: 20px;
-        background-color: #f9f9f9; 
-        border-radius: 8px; 
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-        width: 800px; 
-        max-width: 800px; 
-        margin: 20px auto; 
-    }
+.contenedor-infotarjetas::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
 
-    /* Estilo para el título principal */
-    .info-po h2 {
-        color: #0056b3; 
-        font-size: 2em; 
-        margin-bottom: 25px;
-        text-align: center; 
-        border-bottom: 2px solid #eee; 
-        padding-bottom: 15px;
-    }
+.contenedor-infotarjetas::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
 
-    /* Estilo para los subtítulos (Indicadores y Subtemas) */
-    .info-po h3 {
-        color: #0056b3; 
-        font-size: 1.5em; 
-        margin-top: 30px; 
-        margin-bottom: 15px; 
-        border-bottom: 1px solid #eee; 
-        padding-bottom: 8px;
-    }
+.contenedor-infotarjetas::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
-    /* Estilo para la lista de indicadores */
-    .info-po ul {
-        list-style: none; 
-        padding: 0;
-        margin: 0;
-    }
+/* Estilos generales para el contenedor principal */
+.info-po {
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
 
-    /* Estilo para cada elemento de indicador */
-    .info-po .indicador {
-        background-color: #e0f2f7; 
-        border-left: 5px solid #007bff; 
-        padding: 10px 15px;
-        margin-bottom: 10px; 
-        border-radius: 4px; 
-        font-size: 1.1em;
-        line-height: 1.4;
-    }
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 800px;
+    margin: 20px auto;
+}
 
-    /* Estilos para las secciones de contenido (subtema y párrafo) */
-    .secciones-contenido {
-        margin-top: 30px;
-    }
+/* Estilo para el título principal */
+.info-po h2 {
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+}
 
-    .seccion-subtema-parrafo {
-        background-color: #ffffff; 
-        padding: 20px;
-        margin-bottom: 20px; 
-        border-radius: 8px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
-        border: 1px solid #ddd; 
-    }
+/* Estilo para los subtítulos (Indicadores y Subtemas) */
+.info-po h3 {
+    color: #0056b3;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
 
-    .seccion-subtema-parrafo h3 {
-        color: #0056b3; /* Color del subtema */
-        font-size: 1.4em;
-        margin-top: 0; 
-        margin-bottom: 10px;
-        border-bottom: none; 
-        padding-bottom: 0;
-    }
+/* Estilo para la lista de indicadores */
+.info-po ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-    .seccion-subtema-parrafo p {
-        font-size: 1em;
-        line-height: 1.6; 
-        color: #555; 
-        margin-bottom: 0; 
-    }
+/* Estilo para cada elemento de indicador */
+.info-po .indicador {
+    background-color: #e0f2f7;
+    border-left: 5px solid #007bff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+/* Estilos para las secciones de contenido (subtema y párrafo) */
+.secciones-contenido {
+    margin-top: 30px;
+}
+
+.seccion-subtema-parrafo {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ddd;
+}
+
+.seccion-subtema-parrafo h3 {
+    color: #0056b3;
+    /* Color del subtema */
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.seccion-subtema-parrafo p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 0;
+}
 
 .card-PO {
-     background-color: rgba(255, 255, 255, 0.2);
-    
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100px;
@@ -122,7 +138,6 @@
 }
 
 .card-PO span {
-    color: white;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -143,13 +158,7 @@
     transition: transform 0.2s;
 }
 
-.card-PO.selected:hover {
-    transform: translateY(-15px) scale(1.05);
-    /* Mantiene el efecto del seleccionado */
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+
 
 .home-button {
 

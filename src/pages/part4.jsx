@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import '../styles/etiquetas.css';
 import '../styles/postyles.css';
 import '../styles/tablas.css';
 
 import Modal from '../components/modal.jsx';
-import infoparrafos from '../pages/poData.js';
+import Allinfo from '../pages/poData.js';
 
 
 
@@ -28,7 +27,7 @@ function Part4() {
 
    
 
-
+const infoparrafos = Allinfo.infoparrafos;
 
     // Obtener los datos del PO actualmente seleccionado
     const currentPOData = selectedCardIndex !== null ? infoparrafos[selectedCardIndex] : null;
@@ -59,7 +58,7 @@ function Part4() {
                                 <h2>{currentPOData.titulo}</h2>
                                 {currentPOData.indicadores && currentPOData.indicadores.length > 0 && (
                                     <>
-                                        <h3>Indicadores:</h3>
+                                        
                                         <ul>
                                             {currentPOData.indicadores.map((indicador, indIndex) => (
                                                 <li key={indIndex} className="indicador">{indicador}</li>

@@ -5,7 +5,9 @@
     gap: 40px;
     /* Espacio entre las dos tablas */
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(10px);
     /* Un fondo suave */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
