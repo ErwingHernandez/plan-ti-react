@@ -32,95 +32,91 @@ function Obtiypda() {
             </section>
 
             <section className="sectioncontenido-obtiypda">
-
-                {seccionActiva === "financiero" && (
-                    <div className='conteneddoresallperspectiv'>
-                        {plan
-                            .find(p => p.perspectiva.toLowerCase() === "financiero")
-                            ?.objetivosNegocio.map((objNeg, index) => (
-                                <div key={index} className="fila-objetivo">
-                                    <div className="columna-objetivo">
-                                        <h4>{objNeg.objetivo}</h4>
+                <div className="contenedor-animado" key={seccionActiva}>
+                    {seccionActiva === "financiero" && (
+                        <div className='conteneddoresallperspectiv'>
+                            {plan
+                                .find(p => p.perspectiva.toLowerCase() === "financiero")
+                                ?.objetivosNegocio.map((objNeg, index) => (
+                                    <div key={index} className="fila-objetivo">
+                                        <div className="columna-objetivo">
+                                            <h4>{objNeg.objetivo}</h4>
+                                        </div>
+                                        <div className="columna-ti">
+                                            <ul>
+                                                {objNeg.objetivosTI.map((ti, i) => (
+                                                    <li key={i}>{ti}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="columna-ti">
-                                        <ul>
-                                            {objNeg.objetivosTI.map((ti, i) => (
-                                                <li key={i}>{ti}</li>
-                                            ))}
-                                        </ul>
+                                ))}
+                        </div>
+                    )}
+
+                    {seccionActiva === "clientes" && (
+                        <div className='conteneddoresallperspectiv'>
+                            {plan
+                                .find(p => p.perspectiva.toLowerCase() === "clientes")
+                                ?.objetivosNegocio.map((objNeg, index) => (
+                                    <div key={index} className="fila-objetivo">
+                                        <div className="columna-objetivo">
+                                            <h4>{objNeg.objetivo}</h4>
+                                        </div>
+                                        <div className="columna-ti">
+                                            <ul>
+                                                {objNeg.objetivosTI.map((ti, i) => (
+                                                    <li key={i}>{ti}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                        </div>
+                    )}
 
-                    </div>
-                )}
-
-                {seccionActiva === "clientes" && (
-                    <div className='conteneddoresallperspectiv'>
-                        {plan
-                            .find(p => p.perspectiva.toLowerCase() === "clientes")
-                            ?.objetivosNegocio.map((objNeg, index) => (
-                                <div key={index} className="fila-objetivo">
-                                    <div className="columna-objetivo">
-                                        <h4>{objNeg.objetivo}</h4>
+                    {seccionActiva === "procesosinternos" && (
+                        <div className='conteneddoresallperspectiv'>
+                            {plan
+                                .find(p => p.perspectiva.toLowerCase() === "procesos internos")
+                                ?.objetivosNegocio.map((objNeg, index) => (
+                                    <div key={index} className="fila-objetivo">
+                                        <div className="columna-objetivo">
+                                            <h4>{objNeg.objetivo}</h4>
+                                        </div>
+                                        <div className="columna-ti">
+                                            <ul>
+                                                {objNeg.objetivosTI.map((ti, i) => (
+                                                    <li key={i}>{ti}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div className="columna-ti">
-                                        <ul>
-                                            {objNeg.objetivosTI.map((ti, i) => (
-                                                <li key={i}>{ti}</li>
-                                            ))}
-                                        </ul>
+                                ))}
+                        </div>
+                    )}
+
+                    {seccionActiva === "aprendizajefeedback" && (
+                        <div className='conteneddoresallperspectiv'>
+                            {plan
+                                .find(p => p.perspectiva.toLowerCase() === "aprendizaje y feedback")
+                                ?.objetivosNegocio.map((objNeg, index) => (
+                                    <div key={index} className="fila-objetivo">
+                                        <div className="columna-objetivo">
+                                            <h4>{objNeg.objetivo}</h4>
+                                        </div>
+                                        <div className="columna-ti">
+                                            <ul>
+                                                {objNeg.objetivosTI.map((ti, i) => (
+                                                    <li key={i}>{ti}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
-
-                    </div>
-                )}
-
-                {seccionActiva === "procesosinternos" && (
-                    <div className='conteneddoresallperspectiv'>
-
-                        {plan
-                            .find(p => p.perspectiva.toLowerCase() === "procesos internos")
-                            ?.objetivosNegocio.map((objNeg, index) => (
-                                <div key={index} className="fila-objetivo">
-                                    <div className="columna-objetivo">
-                                        <h4>{objNeg.objetivo}</h4>
-                                    </div>
-                                    <div className="columna-ti">
-                                        <ul>
-                                            {objNeg.objetivosTI.map((ti, i) => (
-                                                <li key={i}>{ti}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            ))}
-                    </div>
-                )}
-
-                {seccionActiva === "aprendizajefeedback" && (
-                    <div className='conteneddoresallperspectiv'>
-
-                        {plan
-                            .find(p => p.perspectiva.toLowerCase() === "aprendizaje y feedback")
-                            ?.objetivosNegocio.map((objNeg, index) => (
-                                <div key={index} className="fila-objetivo">
-                                    <div className="columna-objetivo">
-                                        <h4>{objNeg.objetivo}</h4>
-                                    </div>
-                                    <div className="columna-ti">
-                                        <ul>
-                                            {objNeg.objetivosTI.map((ti, i) => (
-                                                <li key={i}>{ti}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            ))}
-                    </div>
-                )}
-
+                                ))}
+                        </div>
+                    )}
+                </div>
             </section>
 
 

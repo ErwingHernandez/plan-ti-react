@@ -118,3 +118,18 @@
     line-height: 1.5;
     list-style: none;
 }
+
+.contenedor-animado {
+  animation: fadeSlideIn 0.5s ease-in-out;
+}
+
+@keyframes fadeSlideIn {
+  from {
+   
+    transform: translateY(40px);
+  }
+  to {
+    
+    transform: translateY(0);
+  }
+}
