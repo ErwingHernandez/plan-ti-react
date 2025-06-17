@@ -118,13 +118,13 @@ const infoparrafos = [
     },
     {
         titulo: "PO2",
-        indicadores: [], 
+        indicadores: [],
         contenido: [
             {
-                subtema: "PO2.X Subtema 1 de PO2", 
+                subtema: "PO2.X Subtema 1 de PO2",
                 parrafo: "Párrafo sobre el subtema 1 de PO2. Rellena con la descripción correspondiente."
             },
-            
+
         ],
 
         metas: [
@@ -132,7 +132,7 @@ const infoparrafos = [
             "Meta de PO2 - Requerimiento de gobierno",
         ],
         procesos: [
-            "Proceso de PO2 - Definir la oferta de servicio", 
+            "Proceso de PO2 - Definir la oferta de servicio",
             "Proceso de PO2 - Estrategia de entrega",
         ],
         actividades: [
@@ -140,7 +140,7 @@ const infoparrafos = [
             "Actividad de PO2 - Entender capacidades de TI",
         ],
         metricas_ti: [
-            "Métrica TI de PO2 - Aprobación del negocio", 
+            "Métrica TI de PO2 - Aprobación del negocio",
             "Métrica TI de PO2 - Cumplimiento de requerimientos",
         ],
         metricas_procesos: [
@@ -148,14 +148,14 @@ const infoparrafos = [
             "Métrica de Procesos de PO2 - % de iniciativas de TI",
         ],
         metricas_actividades: [
-            "Métrica de Actividades de PO2 - Retrasos en actualizaciones", 
+            "Métrica de Actividades de PO2 - Retrasos en actualizaciones",
             "Métrica de Actividades de PO2 - % de reuniones con participación del negocio",
         ],
 
-       
+
         tablas: [
             // Ejemplo de Tabla de Entradas y Salidas para PO2 (puedes copiar y modificar la de PO1)
-            
+
             {
                 titulo: "Tabla de Entradas y Salidas de PO2",
                 tipo: "entradasSalidas",
@@ -168,23 +168,23 @@ const infoparrafos = [
                 subHeaders: ["", "", "", "", "", "", "", ""],
                 data: [
                     {
-                        desde: "POX", 
+                        desde: "POX",
                         entradas: "Entrada específica de PO2",
                         salidas: "Salida específica de PO2",
-                        hacia: ["POY", "POZ", "", "", ""] 
+                        hacia: ["POY", "POZ", "", "", ""]
                     },
-                    
+
                 ],
             },
-            
+
 
             // Ejemplo de Matriz RACI 
-            
+
             {
                 titulo: "Matriz RACI de PO2",
                 tipo: "raci",
                 headersPersonas: [
-                   "Mishel Y. Izaguirre M.",
+                    "Mishel Y. Izaguirre M.",
                     "Judith A. Balladares",
                     "Holman J. Bermudez S.",
                     "Erwing A. Hernandez G."
@@ -192,14 +192,106 @@ const infoparrafos = [
                 data: [
                     { actividad: "Actividad 1 de PO2 para RACI", raci: ["R", "A", "C", "I"] },
                     { actividad: "Actividad 2 de PO2 para RACI", raci: ["A", "R", "I", "C"] },
-                    
+
                 ],
                 subtitulo: "Una Matriz RACI identifica quien es Responsable, quien debe rendir cuentas (A), quien debe ser Consultado y/o Informado para PO2."
             }
-            
+
         ]
 
     }
 ];
 
-export default infoparrafos; // Exporta la constante
+const planAccion = [
+    {
+        perspectiva: "Financiero",
+        objetivosNegocio: [
+            {
+                objetivo: "Optimizar el uso de los recursos tecnológicos para reducir costos operativos.",
+                objetivosTI: [
+                    "Obj4. Implementar un sistema automatizado de control de inventario por laboratorio en el pabellón 16 del SIUDT, que permita registrar, monitorear y actualizar en tiempo real los activos tecnológicos para una gestión más precisa y eficiente.",
+                    "Objt10. Diseñar un módulo automatizado para la planificación y notificación del mantenimiento preventivo de equipos tecnológicos en los laboratorios del pabellón 16 del SIUDT.",
+                    "Obj9. Implementar la herramienta Beyond para automatizar el control, monitoreo y soporte remoto de los equipos de los laboratorios del pabellón 16 del SIUDT, con el fin de mejorar la eficiencia operativa, reducir tiempos de respuesta y garantizar la seguridad en la gestión técnica."
+                ]
+            },
+            {
+                objetivo: "Garantizar que las inversiones en la infraestructura tecnológica aporten de forma medible a la eficiencia operativa.",
+                objetivosTI: [
+                    "Obj2. Implementar un sistema automatizado de reservas para los laboratorios del pabellón 16 del SIUDT, que permita gestionar de forma eficiente la asignación de espacios y recursos tecnológicos.",
+                    "Obj6. Implementar un sistema de monitoreo automatizado con Nagios para supervisar en tiempo real el estado, disponibilidad y rendimiento de los equipos de los laboratorios del pabellón 16 del SIUDT, con el fin de detectar fallos, prevenir interrupciones y optimizar la gestión técnica.",
+                    "Obj5. Diseñar e implementar un Dashboard automatizado para los laboratorios del pabellón 16 del SIUDT, que permita visualizar en tiempo real indicadores clave sobre el estado de equipos, uso de recursos, incidencias y disponibilidad de espacios.",
+                    "Obj9. Implementar la herramienta Beyond para automatizar el control, monitoreo y soporte remoto de los equipos de los laboratorios del pabellón 16 del SIUDT, con el fin de mejorar la eficiencia operativa, reducir tiempos de respuesta y garantizar la seguridad en la gestión técnica."
+                ]
+            }
+        ]
+    },
+    {
+        perspectiva: "Clientes",
+        objetivosNegocio: [
+            {
+                objetivo: "Mejorar la satisfacción y experiencia de los usuarios en la gestión de laboratorios.",
+                objetivosTI: [
+                    "Obj2. Implementar un sistema automatizado de reservas para los laboratorios del pabellón 16 del SIUDT, que permita gestionar de forma eficiente la asignación de espacios y recursos tecnológicos.",
+                    "Obj7. Diseñar e implementar un módulo de gestión de incidencias técnicas en los laboratorios del pabellón 16 del SIUDT, que permita el reporte, seguimiento y resolución de problemas técnicos de forma ágil y centralizada.",
+                    "Obj5. Diseñar e implementar un Dashboard automatizado para los laboratorios del pabellón 16 del SIUDT, que permita visualizar en tiempo real indicadores clave sobre el estado de equipos, uso de recursos, incidencias y disponibilidad de espacios."
+                ]
+            },
+            {
+                objetivo: "Garantizar la seguridad y acceso controlado a los laboratorios.",
+                objetivosTI: [
+                    "Obj1. Definir políticas institucionales sobre el uso, mantenimiento y seguridad de la infraestructura tecnológica.",
+                    "Obj9. Implementar la herramienta Beyond para automatizar el control, monitoreo y soporte remoto de los equipos de los laboratorios del pabellón 16 del SIUDT, con el fin de mejorar la eficiencia operativa, reducir tiempos de respuesta y garantizar la seguridad en la gestión técnica.",
+                    "Obj3. Desarrollar e implementar un sistema automatizado para el control y monitoreo de los programas instalados en los laboratorios del pabellón 16 del SIUDT, que permita garantizar la integridad, legalidad y actualización del software."
+                ]
+            }
+        ]
+    },
+    {
+        perspectiva: "Procesos Internos",
+        objetivosNegocio: [
+            {
+                objetivo: "Automatizar y optimizar el control de inventarios, reservas, mantenimiento e incidencias.",
+                objetivosTI: [
+                    "Obj2. Implementar un sistema automatizado de reservas para los laboratorios del pabellón 16 del SIUDT, que permita gestionar de forma eficiente la asignación de espacios y recursos tecnológicos.",
+                    "Obj4. Implementar un sistema automatizado de control de inventario por laboratorio en el pabellón 16 del SIUDT, que permita registrar, monitorear y actualizar en tiempo real los activos tecnológicos para una gestión más precisa y eficiente.",
+                    "Obj7. Diseñar e implementar un módulo de gestión de incidencias técnicas en los laboratorios del pabellón 16 del SIUDT, que permita el reporte, seguimiento y resolución de problemas técnicos de forma ágil y centralizada.",
+                    "Objt10. Diseñar un módulo automatizado para la planificación y notificación del mantenimiento preventivo de equipos tecnológicos en los laboratorios del pabellón 16 del SIUDT."
+                ]
+            },
+            {
+                objetivo: "Implementar sistemas de monitoreo y reporte en tiempo real.",
+                objetivosTI: [
+                    "Obj5. Diseñar e implementar un Dashboard automatizado para los laboratorios del pabellón 16 del SIUDT, que permita visualizar en tiempo real indicadores clave sobre el estado de equipos, uso de recursos, incidencias y disponibilidad de espacios.",
+                    "Obj6. Implementar un sistema de monitoreo automatizado con Nagios para supervisar en tiempo real el estado, disponibilidad y rendimiento de los equipos de los laboratorios del pabellón 16 del SIUDT, con el fin de detectar fallos, prevenir interrupciones y optimizar la gestión técnica.",
+                    "Obj9. Implementar la herramienta Beyond para automatizar el control, monitoreo y soporte remoto de los equipos de los laboratorios del pabellón 16 del SIUDT, con el fin de mejorar la eficiencia operativa, reducir tiempos de respuesta y garantizar la seguridad en la gestión técnica."
+                ]
+            }
+        ]
+    },
+    {
+        perspectiva: "Aprendizaje y Feedback",
+        objetivosNegocio: [
+            {
+                objetivo: "Capacitar al personal técnico y usuarios en nuevas tecnologías y políticas.",
+                objetivosTI: [
+                    "Obj1. Definir políticas institucionales sobre el uso, mantenimiento y seguridad de la infraestructura tecnológica.",
+                    "Obj9. Implementar la herramienta Beyond para automatizar el control, monitoreo y soporte remoto de los equipos de los laboratorios del pabellón 16 del SIUDT, con el fin de mejorar la eficiencia operativa, reducir tiempos de respuesta y garantizar la seguridad en la gestión técnica.",
+                    "Obj10. Diseñar un módulo automatizado para la planificación y notificación del mantenimiento preventivo de equipos tecnológicos en los laboratorios del pabellón 16 del SIUDT."
+                ]
+            },
+            {
+                objetivo: "Fomentar la cultura de mejora continua y adopción tecnológica.",
+                objetivosTI: [
+                    "Obj1. Definir políticas institucionales sobre el uso, mantenimiento y seguridad de la infraestructura tecnológica.",
+                    "Obj5. Diseñar e implementar un Dashboard automatizado para los laboratorios del pabellón 16 del SIUDT, que permita visualizar en tiempo real indicadores clave sobre el estado de equipos, uso de recursos, incidencias y disponibilidad de espacios.",
+                    "Obj8. Implementar un módulo de bitácora digital para los laboratorios del pabellón 16 del SIUDT, destinado exclusivamente a los responsables y al Jefe del SIUDT, que permita registrar diariamente actividades realizadas, observaciones relevantes y estado general de los recursos."
+                ]
+            }
+        ]
+    }
+];
+
+
+
+
+export default {infoparrafos, planAccion}; // Exporta la constante
