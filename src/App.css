@@ -1,7 +1,8 @@
-.contenedor-general{
-  
+.contenedor-general {
+
   display: flex;
 }
+
 #documento {
   display: grid;
   margin-top: 4rem;
@@ -19,15 +20,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #ffffffcc;
- 
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(10px);
+
   border-radius: 16px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   text-align: center;
 
- 
+
 }
 
 .card-styled span {
@@ -37,11 +41,14 @@
 }
 
 .card-styled:hover {
-  transform: scale(1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
 }
 
-.contenedor-tarjetas{
+.contenedor-tarjetas {
   width: 100%;
 }
 
@@ -51,16 +58,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 
 .card:hover {
-  transform: translateY(-20px) scale(1.2);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); 
+  transform: translateY(-15px) scale(1.0);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-.right-panel{
+.right-panel {
   display: flex;
   top: 2.5rem;
   height: 80dvh;
@@ -68,6 +75,19 @@
   justify-content: center;
   position: absolute;
   left: 76%;
+  gap: 20px;
+  z-index: 1;
+}
+
+.left-panel {
+  display: flex;
+  position: absolute;
+  top: 2.5rem;
+  height: 80dvh;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 76%;
   gap: 20px;
   z-index: 1;
 }
@@ -90,29 +110,36 @@
   margin-top: 5rem;
   display: flex;
   height: 5rem;
+  width: 25dvw;
+  right: 37%;
+  position: absolute;
 
   justify-content: center;
   align-items: center;
   font-size: 24px;
   border-radius: 12px;
 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
 
+  backdrop-filter: blur(10px);
 
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
 }
 
-#card5 {
-  width: 100dvh;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
-  border-radius: 12px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(180deg, #3bdaf6, #1d44ad);
-  color: white;
-  animation: pulse 2s infinite;
+#accion:hover {
+  transform: translateY(-15px) scale(1.0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
 }
 
 /* Efecto de pulso */
@@ -121,16 +148,14 @@
     transform: scale(1);
     box-shadow: 0 0 10px rgba(59, 218, 246, 0.5);
   }
+
   50% {
     transform: scale(1.03);
     box-shadow: 0 0 20px rgba(29, 68, 173, 0.6);
   }
+
   100% {
     transform: scale(1);
     box-shadow: 0 0 10px rgba(59, 218, 246, 0.5);
   }
 }
-
-
-
-

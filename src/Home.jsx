@@ -11,7 +11,13 @@ import {
     faLayerGroup,
     faBullseye,
     faPaperclip,
-    faClipboardList
+    faClipboardList,
+    faCircleNodes,
+    faShareNodes,
+    faArrowsRotate,
+    faPlug,
+    faNetworkWired,
+    faSitemap
 } from '@fortawesome/free-solid-svg-icons'
 
 import './App.css'
@@ -47,23 +53,23 @@ function Home() {
                         <div id='documento'>
 
                             <div className='card card-styled' onClick={() => handleCardClick("/part1")}>
-                                
-                                <FontAwesomeIcon icon={faBookOpen} bounce  size="2x" className="icon-hover-bounce"/>
+
+                                <FontAwesomeIcon icon={faBookOpen}  size="2x" className="icon-hover-bounce" />
                                 <span>Introducción</span>
                             </div>
 
                             <div className='card card-styled' onClick={() => handleCardClick("/part2")}>
-                                <FontAwesomeIcon icon={faLightbulb}  bounce  size="2x" />
+                                <FontAwesomeIcon icon={faLightbulb}  size="2x" />
                                 <span>Marco Teórico</span>
                             </div>
 
                             <div className='card card-styled' onClick={() => handleCardClick("/part3")}>
-                                <FontAwesomeIcon icon={faCode}  bounce  size="2x" />
+                                <FontAwesomeIcon icon={faCode}  size="2x" />
                                 <span>Desarrollo</span>
                             </div>
 
                             <div className='card card-styled' onClick={() => handleCardClick("/part4")}>
-                                <FontAwesomeIcon icon={faLayerGroup}  bounce  size="2x" />
+                                <FontAwesomeIcon icon={faLayerGroup}  size="2x" />
                                 <span>PO</span>
                             </div>
 
@@ -73,7 +79,8 @@ function Home() {
 
 
                         <div id='accion' onClick={() => handleCardClick("/planaccion")}>
-                            <div id='card5'>Plan de Acción</div>
+                            <FontAwesomeIcon icon={faSitemap}  size="2x" />
+                            <span>Plan de Acción</span>
                         </div>
                     </div>
                     {/*Contenedor de las partes */}
@@ -82,12 +89,12 @@ function Home() {
                     {/*Contenedor del panel de la derecha */}
                     <div className='right-panel'>
                         <div className='card card-styled' onClick={() => handleCardClick("/objetivosti")}>
-                            <FontAwesomeIcon icon={faBullseye}  bounce  size="2x" />
+                            <FontAwesomeIcon icon={faBullseye}  size="2x" />
                             <span>Objetivos TI</span>
                         </div>
 
-                        <div className='card card-styled'  onClick={() => handleCardClick("/anexos")}>
-                            <FontAwesomeIcon icon={faPaperclip}  bounce  size="2x" />
+                        <div className='card card-styled' onClick={() => handleCardClick("/anexos")}>
+                            <FontAwesomeIcon icon={faPaperclip}  size="2x" />
                             <span>Anexos</span>
                         </div>
 
@@ -96,10 +103,19 @@ function Home() {
                     {/*Contenedor del panel de la derecha */}
                 </div>
 
+                <div className='left-panel'>
+
+                    <div className='card card-styled' onClick={() => handleCardClick("/Objtiypdc")}>
+                        <FontAwesomeIcon icon={faShareNodes}  size="2x" />
+                        <span>OBTI & PDC</span>
+                    </div>
+
+                </div>
+
             </motion.div>
 
         </>
-        
+
     )
 }
 

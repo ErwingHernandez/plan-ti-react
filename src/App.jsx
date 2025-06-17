@@ -8,6 +8,7 @@ import Part4 from './pages/part4'
 import ObjetivosTi from './pages/objetivosti.jsx'
 import Planaccion from './pages/planaccion'
 import Anexos from './pages/anexos.jsx'
+import Objtiypdc from './pages/obtiypda.jsx'
 import Backgroundslides from './components/backgroundslides.jsx'
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/objetivosti" element={<ObjetivosTi />} />
         <Route path="/planaccion" element={<Planaccion />} />
         <Route path="/anexos" element={<Anexos />} />
+        <Route path="/objtiypdc" element={<Objtiypdc />} />
         
       </Routes>
     </Router>
