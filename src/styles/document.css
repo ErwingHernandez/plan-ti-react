@@ -151,3 +151,16 @@ nav ul li a:hover::after {
   width: 700px;
   height: fit-content;
 }
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #004080;
+}

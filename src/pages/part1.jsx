@@ -13,7 +13,9 @@ function Part1() {
         "Introducción",
         "Antecedentes",
         "Justificacion",
-        "Planteamiento del Problema"
+        "Planteamiento del Problema",
+        "Objetivos"
+
     ];
 
     const handleSeleccion = (titulo) => {
@@ -144,6 +146,32 @@ function Part1() {
                                 ¿Qué procesos del marco COBIT 4.1 podrían fortalecer la administración para una gestión más eficiente y alineada a los objetivos del SIUDT?
                             </div>
                         </section>
+
+                        <h1 id="Objetivos" className="section-fade" style={{ animationDelay: '0.3s' }}>Objetivos</h1>
+
+                        <section className="section-fade" style={{ animationDelay: '0.5s' }}>
+                            <h2>Objetivo General</h2>
+                            <p>
+                                Diseñar un plan estratégico de tecnología de la información en el dominio de planear de COBIT 4.1 para el SIUDT UNAN-Managua laboratorios del pabellón 16, en el primer semestre 2025.
+                            </p>
+
+                            <h2>Objetivos Específicos</h2>
+                            <ol>
+                                <li>
+                                    Analizar el estado actual de la planificación estratégica de las tecnologías de la información en los laboratorios del pabellón 16 de la UNAN-Managua, mediante la identificación de procesos, recursos y actores involucrados en la gestión del SIUDT durante el primer semestre de 2025, con el fin de detectar fortalezas, oportunidades, debilidades y amenazas (FODA) que permitan orientar decisiones estratégicas para el mejoramiento continuo del sistema.
+                                </li>
+                                <li>
+                                    Diseñar estrategias que fortalezcan la planificación tecnológica del Sistema de Información Universitario para el Desarrollo Tecnológico (SIUDT) en los laboratorios del pabellón 16 de la UNAN-Managua, considerando los factores internos y externos que inciden en su desempeño.
+                                </li>
+                                <li>
+                                    Proponer soluciones de automatización para optimizar los procesos de gestión tecnológica en los laboratorios del pabellón 16 de la UNAN-Managua, con el propósito de mejorar la eficiencia operativa y la toma de decisiones en el SIUDT.
+                                </li>
+                                <li>
+                                    Analizar la factibilidad económica de las iniciativas de mejora tecnológica propuestas para el SIUDT, mediante la evaluación detallada de los costos de implementación, los beneficios esperados, el retorno de inversión y la viabilidad presupuestaria institucional, con el fin de garantizar una toma de decisiones informada y sostenible.
+                                </li>
+                            </ol>
+                        </section>
+
                     </div>
 
                 </div>

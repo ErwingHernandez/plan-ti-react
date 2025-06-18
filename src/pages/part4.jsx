@@ -11,13 +11,13 @@ import Allinfo from '../pages/poData.js';
 function Part4() {
 
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
-     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleCardClick = (index) => {
         setSelectedCardIndex(index);
     }
 
-     const handleOpenModal = () => {
+    const handleOpenModal = () => {
         setIsModalOpen(true);
     }
 
@@ -25,9 +25,9 @@ function Part4() {
         setIsModalOpen(false);
     }
 
-   
 
-const infoparrafos = Allinfo.infoparrafos;
+
+    const infoparrafos = Allinfo.infoparrafos;
 
     // Obtener los datos del PO actualmente seleccionado
     const currentPOData = selectedCardIndex !== null ? infoparrafos[selectedCardIndex] : null;
@@ -58,7 +58,7 @@ const infoparrafos = Allinfo.infoparrafos;
                                 <h2>{currentPOData.titulo}</h2>
                                 {currentPOData.indicadores && currentPOData.indicadores.length > 0 && (
                                     <>
-                                        
+
                                         <ul>
                                             {currentPOData.indicadores.map((indicador, indIndex) => (
                                                 <li key={indIndex} className="indicador">{indicador}</li>
@@ -148,7 +148,7 @@ const infoparrafos = Allinfo.infoparrafos;
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        
+
                                                         {tabla.data.map((fila, filaIdx) => (
                                                             <tr key={filaIdx}>
                                                                 <td>{fila.actividad}</td>
@@ -159,16 +159,30 @@ const infoparrafos = Allinfo.infoparrafos;
                                                         ))}
                                                     </tbody>
                                                 </table>
+
+
                                             </div>
+
+
                                         )}
+                                    </div>
+
+
+                                ))}
+
+                                {currentPOData.meetasymetricas && currentPOData.meetasymetricas.map((meta, index) => (
+                                    <div key={index} className="ficha-metas">
+                                        <h3>{meta.titulo}</h3>
+                                        <p className="subtema-metas">{meta.subtema}</p>
+                                        <ul className="lista-metricas">
+                                            {meta.metricas.map((metrica, idx) => (
+                                                <li key={idx}>{metrica}</li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 ))}
 
-                                 <div className="modal-button-container">
-                                    <button className="open-modal-button" onClick={handleOpenModal}>
-                                        Ver Metas y Métricas
-                                    </button>
-                                </div>
+
                             </div>
                         </>
                     ) : (
@@ -183,11 +197,11 @@ const infoparrafos = Allinfo.infoparrafos;
 
                     )}
 
-            
+
                 </div>
             </div>
 
-              {isModalOpen && <Modal data={currentPOData} onClose={handleCloseModal} />}
+            {isModalOpen && <Modal data={currentPOData} onClose={handleCloseModal} />}
         </>
     );
 }

@@ -6,50 +6,55 @@ import '../styles/planaccion.css'
 const datosPerspectivas = {
     financiera: {
         img: "/finanzas.png",
-        objetivos: ["Reducir el costo total de mantenimiento correctivo.",
-            "Aumentar el retorno de inversión del sistema de gestión tecnológica. ",
-            "Disminuir el costo promedio por equipo fuera de servicio. ",
-            "Generar ahorros sostenidos mediante el mantenimiento preventivo. ",
+        objetivos: ["Optimizar el uso de los recursos tecnológicos para reducir costos operativos.",
+            "Garantizar que las inversiones en la infraestructura tecnológica aporten de forma medible a la eficiencia operativa. ",
+
         ],
-        indicadores: ["% costo (mensual, semestral, anual) por mantenimiento correctivo.",
-            "Cálculo de retorno de inversión (Beneficio-Inversión)",
-            "Costo promedio por equipo fuera de servicio.",
-            "Ahorro generado por mantenimiento preventivo."]
+        indicadores: ["% de reducción de pérdidas por activos no registrados",
+            "% de cumplimiento del mantenimiento programado",
+            "% de incidentes resueltos de forma remota",
+            "% de disponibilidad de equipos monitoreados",
+            "% de actualización en tiempo real de indicadores(dashboard)",
+            "Tiempo promedio de atención a incidencias (minutos)"
+        ]
     },
 
     aprendizaje: {
         img: "/aprendizaje y feedback.jpg",
-        objetivos: ["Implementar un plan de formación continua para el personal que trabaja en los laboratorios del pabellón 16, iniciando en el segundo semestre de 2025, con capacitaciones semestrales sobre el uso, mantenimiento y cuidado de los equipos, así como medidas básicas de seguridad informática, con el fin de fortalecer sus habilidades técnicas de forma progresiva durante un período de cinco años. "],
-        indicadores: ["Tasa de participación en capacitaciones. ",
-            "Nivel de satisfacción del personal capacitado. ",
-            "Porcentaje de mejora técnica detectada.",
-            "Avance en cumplimiento del plan de formación a 5 años. "]
+        objetivos: ["Capacitar al personal técnico y usuarios en nuevas tecnologías y políticas. ",
+            "Fomentar la cultura de mejora continua y adopción tecnológica."
+        ],
+        indicadores: ["Nº de sesiones de capacitación realizadas. ",
+            "% de personal capacitado en uso de la herramienta ",
+            "Nivel de satisfacción del personal técnico (%)",
+            "Frecuencia de actualización de políticas",
+            "Nº de mejoras aplicadas a partir de datos del dashboard",
+            "% de días con registros completos en bitácora",]
     },
 
     clientes: {
         img: "/cliente.webp",
-        objetivos: ["Aumentar en un 20% la percepción de confiabilidad del servicio tecnológico ofrecido.",
-            "Promover el uso responsable y adecuado de los recursos tecnológicos, reduciendo un 90% en número de incidentes.",
-            "Garantizar la actualización de software educativo según necesidades requeridas por los usuarios.",
-            "Mejorar en un 80% la disponibilidad de equipos y conectividad durante el horario académico.",
+        objetivos: ["Mejorar la satisfacción y experiencia de los usuarios en la gestión de laboratorios.",
+            "Garantizar la seguridad y acceso controlado a los laboratorios."
         ],
-        indicadores: ["% de satisfacción del usuario en encuestas semestrales.",
-            "Nº de incidencias por mal uso / Nº total de sesiones registradas.",
-            "% de softwares requeridos que están disponibles y actualizados.",
-            "% de disponibilidad de equipos funcionales durante el horario de clase."
+        indicadores: ["Nivel de satisfacción de usuarios (% en encuesta)",
+            "Tiempo promedio de resolución de incidencias",
+            "Nivel de cumplimiento de políticas de acceso (%)",
+            "Nº de accesos no autorizados detectados",
+            "% de cumplimiento con software legal y actualizado"
         ]
     },
 
     procesos: {
         img: "/procesos internos.jpg",
-        objetivos: ["Aumentar la disponibilidad operativa de los equipos",
-            "Reducir en un 30% los tiempos de respuesta ante fallas tecnicas",
-            "Automatizar el sistema de reservas y prestamo de equipos",
-            "Establecer un inventario digital actualizado y funcional al 100%",],
-        indicadores: ["% de equipos funcionales disponibles por semana",
-            "Tiempo promedio de resolucion de incidencias",
-            "Tasa de uso del sistema automatizado vs manual",
-            "Frecuencia de actualizacion del inventario (Mensual (Bimestral))"]
+        objetivos: ["Automatizar y optimizar el control de inventarios, reservas, mantenimiento e incidencias.",
+            "mplementar sistemas de monitoreo y reporte en tiempo real."],
+
+        indicadores: ["Reducción de conflictos en asignación de espacios",
+            "Reducción de fallos por falta de mantenimiento (%)",
+            "% de incidencias resueltas",
+            "Nº de alertas generadas automáticamente",
+            "Tiempo promedio de detección de fallos (min)"]
     }
 };
 
