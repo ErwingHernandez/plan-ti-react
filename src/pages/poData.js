@@ -178,11 +178,20 @@ const infoparrafos = [
                 subtitulo: "Una Matriz RACI identifica quien es Responsable, quien debe rendir cuentas (A), quien debe ser Consultado y/o Informado"
             }
         ],
-        metricas_ti: [
-            "% de procesos integrados bajo la nueva arquitectura.",
-            "Nº de errores de datos detectados mensualmente.",
-            "% de personal que comprende el modelo de arquitectura."
+
+        meetasymetricas: [{
+            titulo: "Metas y Metricas",
+            subtema: "Diseñar e implementar una arquitectura de información que integre los sistemas actuales y permita interoperabilidad entre módulos (reservas, incidencias, inventario, etc.).",
+
+            metricas: [
+                "% de procesos integrados bajo la nueva arquitectura.",
+                "Nº de errores de datos detectados mensualmente.",
+                "% de personal que comprende el modelo de arquitectura."
+            ]
+        }
+
         ]
+
     },
 
     {
